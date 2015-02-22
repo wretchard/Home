@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><directory>
+	<group ID="01000000000000000000000000000000" name="Admin">
+		<include group="Internal" groupID="E6FFA7BF2EDFAB4CBE4D169556ACA2FA"/>
+	</group>
+	<group ID="D8E9CDAA7B6C734D97B3BE49730749FE" name="Worker">
+		<include group="Manager" groupID="DF83315B081CB043856B400CD3999C2A"/>
+	</group>
+	<group ID="DF83315B081CB043856B400CD3999C2A" name="Manager">
+		<include group="Admin" groupID="01000000000000000000000000000000"/>
+	</group>
+	<group ID="E6FFA7BF2EDFAB4CBE4D169556ACA2FA" name="Internal"/>
+	<user ID="B485DC43B13B97458A3D65A26DF16218" name="Admin" fullName="Administrator" password="5af2f73d2694e61bc2a56c117df8c688"/>
+</directory>
