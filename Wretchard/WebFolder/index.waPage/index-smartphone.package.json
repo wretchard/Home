@@ -1,4 +1,4 @@
-﻿{
+{
 	"name": "Wretchard/index.waPage/index-smartphone.html",
 	"version": "1.0.0",
 	"loadDependencies": [
@@ -21,10 +21,6 @@
 		},
 		{
 			"id": "Widget/menuItem",
-			"type": "widget"
-		},
-		{
-			"id": "Widget/image",
 			"type": "widget"
 		},
 		{

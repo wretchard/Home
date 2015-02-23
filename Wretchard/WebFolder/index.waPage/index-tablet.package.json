@@ -1,4 +1,4 @@
-﻿{
+{
 	"name": "Wretchard/index.waPage/index-tablet.html",
 	"version": "1.0.0",
 	"loadDependencies": [
@@ -16,15 +16,15 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/image",
+			"type": "widget"
+		},
+		{
 			"id": "Widget/menuBar",
 			"type": "widget"
 		},
 		{
 			"id": "Widget/menuItem",
-			"type": "widget"
-		},
-		{
-			"id": "Widget/image",
 			"type": "widget"
 		},
 		{
