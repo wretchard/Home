@@ -1,135 +1,248 @@
-
 {
-	"toJSON" : true,
-	"extraProperties" : 
-	{
-		"version" : "2",
-		"classes" : 
-		{
-			"User" : 
-			{
-				"panelColor" : "#C3D69B",
-				"panel" : 
-				{
-					"isOpen" : "true",
-					"position" : 
-					{
-						"X" : 25,
-						"Y" : 20
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"User": {
+				"panelColor": "#7F7F7F",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 21,
+						"Y": 5
+					}
+				}
+			},
+			"Event": {
+				"panelColor": "#D8D8D8",
+				"panel": {
+					"isOpen": "false",
+					"pathVisible": true,
+					"position": {
+						"X": 135,
+						"Y": 13
+					}
+				}
+			},
+			"Outcome": {
+				"panelColor": "#E5B9B7",
+				"panel": {
+					"isOpen": "false",
+					"pathVisible": true,
+					"position": {
+						"X": 45,
+						"Y": 251
 					}
 				}
 			}
 		},
-		"model" : 
-		{
-			"scriptMode" : "manual",
-			"workspaceLeft" : 0,
-			"workspaceTop" : 0
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0,
+			"lastScriptLocation": {
+				"User": {
+					"method": "User/User-methods.js",
+					"computed": "User/User-events.js",
+					"events": "User/User-events.js"
+				}
+			}
 		}
 	},
-	"dataClasses" : 
-	[
+	"dataClasses": [
 		{
-			"name" : "User",
-			"className" : "User",
-			"collectionName" : "Users",
-			"scope" : "public",
-			"noEdit" : true,
-			"noSave" : true,
-			"attributes" : 
-			[
+			"name": "Event",
+			"className": "Event",
+			"collectionName": "Events",
+			"scope": "public",
+			"attributes": [
 				{
-					"name" : "ID",
-					"kind" : "storage",
-					"scope" : "public",
-					"indexed" : true,
-					"autogenerate" : true,
-					"type" : "uuid",
-					"indexKind" : "btree"
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"indexKind": "btree"
 				},
 				{
-					"name" : "email",
-					"kind" : "storage",
-					"scope" : "public",
-					"indexed" : true,
-					"type" : "string",
-					"indexKind" : "btree"
+					"name": "eventName",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
 				},
 				{
-					"name" : "password",
-					"kind" : "calculated",
-					"scope" : "public",
-					"type" : "string",
-					"scriptKind" : "javascript",
-					"onGet" : 
-					[
+					"name": "eventDescription",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "outcomes",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "Outcomes",
+					"reversePath": true,
+					"path": "event"
+				},
+				{
+					"name": "closingDate",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				}
+			],
+			"key": [
+				{
+					"name": "ID"
+				}
+			]
+		},
+		{
+			"name": "Outcome",
+			"className": "Outcome",
+			"collectionName": "Outcomes",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"indexKind": "btree"
+				},
+				{
+					"name": "event",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Event",
+					"path": "Event"
+				},
+				{
+					"name": "outComeName",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "outComeDescription",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "eName",
+					"kind": "alias",
+					"scope": "public",
+					"type": "string",
+					"path": "event.eventName"
+				},
+				{
+					"name": "probability",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number"
+				}
+			],
+			"key": [
+				{
+					"name": "ID"
+				}
+			]
+		},
+		{
+			"name": "User",
+			"className": "User",
+			"collectionName": "Users",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"autogenerate": true,
+					"type": "uuid",
+					"indexKind": "btree",
+					"primKey": true
+				},
+				{
+					"name": "email",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"indexKind": "btree",
+					"unique": true
+				},
+				{
+					"name": "password",
+					"kind": "calculated",
+					"scope": "public",
+					"type": "string",
+					"scriptKind": "javascript",
+					"onGet": [
 						{
-							"from" : "$mainModel.User.password.onGet",
-							"userDefined" : true
+							"from": "$mainModel.User.password.onGet",
+							"userDefined": true
 						}
 					],
-					"onSet" : 
-					[
+					"onSet": [
 						{
-							"from" : "$mainModel.User.password.onSet",
-							"userDefined" : true
+							"from": "$mainModel.User.password.onSet",
+							"userDefined": true
 						}
 					]
 				},
 				{
-					"name" : "HA1Key",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "string"
+					"name": "HA1Key",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
 				},
 				{
-					"name" : "role",
-					"kind" : "storage",
-					"scope" : "public",
-					"indexed" : true,
-					"type" : "string",
-					"indexKind" : "btree"
+					"name": "role",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"indexKind": "btree"
 				},
 				{
-					"name" : "fullName",
-					"kind" : "storage",
-					"scope" : "public",
-					"indexed" : true,
-					"type" : "string",
-					"indexKind" : "btree"
+					"name": "fullName",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"indexKind": "btree"
 				}
 			],
-			"events" : 
-			[
+			"events": [
 				{
-					"kind" : "onValidate",
-					"from" : "$mainModel.User.events.onValidate",
-					"userDefined" : true
+					"kind": "validate",
+					"from": "$mainModel.User.events.validate",
+					"userDefined": true
 				}
 			],
-			"methods" : 
-			[
+			"methods": [
 				{
-					"name" : "addUser",
-					"applyTo" : "dataClass",
-					"scope" : "public",
-					"from" : "$mainModel.User.methods.addUser",
-					"userDefined" : true
+					"name": "addUser",
+					"applyTo": "dataClass",
+					"scope": "public",
+					"from": "$mainModel.User.methods.addUser",
+					"userDefined": true
 				},
 				{
-					"name" : "validatePassword",
-					"applyTo" : "entity",
-					"scope" : "publicOnServer",
-					"from" : "$mainModel.User.entityMethods.validatePassword",
-					"userDefined" : true
-				}
-			],
-			"key" : 
-			[
-				{
-					"name" : "ID"
+					"name": "validatePassword",
+					"applyTo": "entity",
+					"scope": "publicOnServer",
+					"from": "$mainModel.User.entityMethods.validatePassword",
+					"userDefined": true
 				}
 			]
 		}
-	]
+	],
+	"type": []
 }

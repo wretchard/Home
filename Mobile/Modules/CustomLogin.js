@@ -1,4 +1,4 @@
-//Creating the User class object to export.
+﻿//Creating the User class object to export.
 var User = new DataClass("Users");
 
 //Add User attributes.
@@ -103,13 +103,14 @@ User.events.onValidate = function() {
 	return err;
 };
 
-module.exports.User = User;
+//module.exports.User = User;
 
 
 
 //Wakanda Login Listener
 var customLoginListener = function (emailAddress, password) {
 	//May need permission to read User class for new session.
+	//return false;
 	var sessionRef = currentSession(); // Get session.
 	var myUser = ds.User({email:emailAddress});
 	if (myUser === null) {
@@ -121,7 +122,8 @@ var customLoginListener = function (emailAddress, password) {
 			
 			switch (myUser.role) {
 				case "Administrator":
-				theGroups = ['Administrator'];
+				//theGroups = ['Administrator'];
+				theGroups = ['Admin'];
 				break;
 
 				case "Manager":
@@ -150,4 +152,4 @@ var customLoginListener = function (emailAddress, password) {
 	}
 };
 
-module.exports.customLoginListener = customLoginListener;
+//module.exports.customLoginListener = customLoginListener;

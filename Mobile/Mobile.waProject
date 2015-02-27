@@ -24,7 +24,7 @@
 	<file path="./startup.js">
 		<tag name="bootStrap"/>
 	</file>
-	<file path="./boostrap.js">
+	<file path="./Scripts/zzRequired.js">
 		<tag name="bootStrap"/>
 	</file>
 </project>
