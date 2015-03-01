@@ -8,6 +8,10 @@
 			"type": "core"
 		},
 		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
 			"id": "Widget/container",
 			"type": "widget"
 		},
@@ -17,6 +21,14 @@
 		},
 		{
 			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/slider",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/matrix",
 			"type": "widget"
 		},
 		{
@@ -32,6 +44,11 @@
 			"id": "application.css",
 			"path": "WEBFOLDER",
 			"type": "style"
+		},
+		{
+			"id": "index.waPage/scripts/index.js",
+			"path": "WEBFOLDER",
+			"type": "script"
 		}
 	]
 }

@@ -12,5 +12,5 @@
 	</group>
 	<group ID="E6FFA7BF2EDFAB4CBE4D169556ACA2FA" name="Internal"/>
 	<user ID="5008AE4A39E6034FBE84F0D99BE8420C" name="Data" fullName="Manager" password="46a6abdd8446cd26b64c4d0050cae69e"/>
-	<user ID="B530A0032802F54B9FC1312EAE362802" name="Admin" fullName="Administrator"/>
+	<user ID="B530A0032802F54B9FC1312EAE362802" name="Admin" fullName="Administrator" password="5af2f73d2694e61bc2a56c117df8c688"/>
 </directory>
