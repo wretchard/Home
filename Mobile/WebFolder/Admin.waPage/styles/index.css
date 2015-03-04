@@ -4,12 +4,12 @@
 */
 
 #button2 {
+	z-index: 6;
 	width: 92px;
 	height: 22px;
 	top: 145px;
 	left: 101px;
 	position: absolute;
-	z-index: 6;
 }
 
 #button1 {
@@ -57,6 +57,7 @@
 	top: 20px;
 	left: 5px;
 	position: absolute;
+	background-color: rgb(95, 191, 0);
 }
 
 #container2 {
