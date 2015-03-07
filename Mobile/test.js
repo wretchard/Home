@@ -22,13 +22,19 @@ function addOneUser(emailAdd, password, role, fullName){
 	}).save();
 }
 //loginByPassword("Data", "a")
-//ds.User.first().remove()
-//addOneUser("test@email.com", "password", "Admin", "test")
-//ds.User.all();
+
+//ds.Outcome.query("event.ID=1")
+//ds.User.remove();
+addOneUser("test@email.com", "password", "Admin", "test")
+//ds.Result.outcome= ds.Outcome.find("ID=1")
+//ds.Result.outcome.save();
+
 //ds.Event.all()
 //loginByPassword("Data", "a")
 //ds.User.all()
 //currentSession()
 
-//ds.User.all()
+ds.User.all()
 //ds.Outcome(1).event.eventName
+
+//ds.Outcome.all()

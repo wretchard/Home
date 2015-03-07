@@ -1,5 +1,3 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?><permissions>
-	<allow action="create" groupName="Manager" groupID="DF83315B081CB043856B400CD3999C2A" resource="Model" temporaryForcePermissions="false" type="model"/>
-	<allow action="update" groupName="Manager" groupID="DF83315B081CB043856B400CD3999C2A" resource="Model" temporaryForcePermissions="false" type="model"/>
-	<allow action="remove" groupName="Manager" groupID="DF83315B081CB043856B400CD3999C2A" resource="Model" temporaryForcePermissions="false" type="model"/>
+	<allow action="promote" groupName="Admin" groupID="01000000000000000000000000000000" resource="Model.Event.createResult" temporaryForcePermissions="false" type="method"/>
 </permissions>

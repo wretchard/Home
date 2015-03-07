@@ -12,23 +12,7 @@
 			"type": "widget"
 		},
 		{
-			"id": "Widget/container",
-			"type": "widget"
-		},
-		{
-			"id": "Widget/textField",
-			"type": "widget"
-		},
-		{
-			"id": "Widget/label",
-			"type": "widget"
-		},
-		{
-			"id": "Widget/slider",
-			"type": "widget"
-		},
-		{
-			"id": "Widget/matrix",
+			"id": "Widget/login",
 			"type": "widget"
 		},
 		{
