@@ -11,7 +11,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		sources.event.createResult(
 		{onSuccess: function(event) {
-			alert(event.result);	
+//			alert(event.result);	
+		}, onError: function(event){
+			a = event
 		}
 		}
 		)

@@ -25,7 +25,7 @@ function addOneUser(emailAdd, password, role, fullName){
 
 //ds.Outcome.query("event.ID=1")
 //ds.User.remove();
-addOneUser("test@email.com", "password", "Admin", "test")
+//addOneUser("test@email.com", "password", "Admin", "test")
 //ds.Result.outcome= ds.Outcome.find("ID=1")
 //ds.Result.outcome.save();
 
@@ -34,7 +34,20 @@ addOneUser("test@email.com", "password", "Admin", "test")
 //ds.User.all()
 //currentSession()
 
-ds.User.all()
+//ds.User.all()
 //ds.Outcome(1).event.eventName
 
 //ds.Outcome.all()
+//var a = ds.Event.find("ID=:1", 1).outcomes
+//a.forEach(function(outcome){
+////	var b=outcome	
+//	result=new ds.Result
+//}
+
+//)
+
+//ds.User(currentUser().ID)
+//currentUser().ID
+//ds.User("B530A0032802F54B9FC1312EAE362802")
+ds.Result.all()
+ 

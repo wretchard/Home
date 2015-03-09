@@ -11,7 +11,7 @@
 				"panelColor" : "#7F7F7F",
 				"panel" : 
 				{
-					"isOpen" : "true",
+					"isOpen" : "false",
 					"pathVisible" : true,
 					"position" : 
 					{
@@ -270,6 +270,12 @@
 					"scope" : "public",
 					"type" : "Event",
 					"path" : "outcome.event"
+				},
+				{
+					"name" : "timeS",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
 				}
 			],
 			"key" : 
