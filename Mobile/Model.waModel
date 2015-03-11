@@ -79,6 +79,10 @@
 				"Event" : 
 				{
 					"method" : "Event/Event-methods.js"
+				},
+				"Result" : 
+				{
+					"events" : "Result/Result-events.js"
 				}
 			}
 		}
@@ -227,7 +231,15 @@
 					"name" : "probability",
 					"kind" : "storage",
 					"scope" : "public",
-					"type" : "number"
+					"type" : "number",
+					"events" : 
+					[
+						{
+							"kind" : "save",
+							"from" : "$mainModel.Result.probability.events.save",
+							"userDefined" : true
+						}
+					]
 				},
 				{
 					"name" : "user",
@@ -276,6 +288,24 @@
 					"kind" : "storage",
 					"scope" : "public",
 					"type" : "number"
+				},
+				{
+					"name" : "batch",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"type" : "uuid",
+					"indexKind" : "auto"
+				}
+			],
+			"methods" : 
+			[
+				{
+					"name" : "Revert",
+					"applyTo" : "entityCollection",
+					"scope" : "publicOnServer",
+					"from" : "$mainModel.Result.collectionMethods.Revert",
+					"userDefined" : true
 				}
 			],
 			"key" : 

@@ -49,5 +49,8 @@ function addOneUser(emailAdd, password, role, fullName){
 //ds.User(currentUser().ID)
 //currentUser().ID
 //ds.User("B530A0032802F54B9FC1312EAE362802")
+//ds.Result.remove();
+//ds.Result.length;	
+//ds.Result.query("probability > 0")
 ds.Result.all()
  

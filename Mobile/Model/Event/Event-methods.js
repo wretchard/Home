@@ -5,7 +5,9 @@ model.Event.entityMethods.createResult = function() {
 	var curSession = currentSession();
 	var curUser = curSession.user;
 	var cU=ds.User(curUser.ID)
-	var timeStamp=Date.now() / 1000 | 0
+//	var timeStamp=Date.now() / 1000 | 0
+	var timeStamp=Date();
+	var uuid=generateUUID();
 	this.outcomes.forEach(
 		function(outcome) {
 			newResult = new ds.Result();
@@ -13,6 +15,7 @@ model.Event.entityMethods.createResult = function() {
 			newResult.user=cU;
 			newResult.timeS=timeStamp;
 			newResult.outcome=outcome;
+			newResult.batch=uuid;
 			newResult.save();
 			
 //			new ds.User({email : emailAdd,
@@ -23,7 +26,7 @@ model.Event.entityMethods.createResult = function() {
 
 		}
 	)
-//	return this.ID;
+	return uuid;
 //	throw {error: 100, errorMessage: 'bad stuff happened'}
 };
 
