@@ -52,5 +52,5 @@ function addOneUser(emailAdd, password, role, fullName){
 //ds.Result.remove();
 //ds.Result.length;	
 //ds.Result.query("probability > 0")
-ds.Result.all()
+ds.Result.query("probability>0").probability;
  
