@@ -82,7 +82,8 @@
 				},
 				"Result" : 
 				{
-					"events" : "Result/Result-events.js"
+					"events" : "Result/Result-events.js",
+					"method" : "Result/Result-methods.js"
 				}
 			}
 		}
