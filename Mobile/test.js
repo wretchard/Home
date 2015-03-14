@@ -49,19 +49,19 @@ function addOneUser(emailAdd, password, role, fullName){
 //ds.User(currentUser().ID)
 //currentUser().ID
 //ds.User("B530A0032802F54B9FC1312EAE362802")
-//ds.Result.remove();
+ds.Result.remove();
 //ds.Result.length;	
 //ds.Result.query("probability > 0")
 //ds.Result.query("probability>0").probability;
 //ds.Result.all().sum
-var a = {};
-var b={}
-a.name="able"
-a.cost=10;
-b.name="baker"
-b.cost=5
-var c=[]
-c.push(a)
-c.push(b)
-c[0]
+//var a = {};
+//var b={}
+//a.name="able"
+//a.cost=10;
+//b.name="baker"
+//b.cost=5
+//var c=[]
+//c.push(a)
+//c.push(b)
+//c[0]
  

@@ -291,6 +291,16 @@
 					"indexKind" : "auto"
 				}
 			],
+			"methods" : 
+			[
+				{
+					"name" : "fixSliders",
+					"applyTo" : "entityCollection",
+					"scope" : "public",
+					"from" : "$mainModel.Result.collectionMethods.fixSliders",
+					"userDefined" : true
+				}
+			],
 			"key" : 
 			[
 				{
