@@ -1,0 +1,51 @@
+{
+	"name": "Mobile/Components/Forecast.waComponent",
+	"version": "1.0.0",
+	"webComponent": "Components/Forecast.waComponent/Forecast.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/container",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/richText",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/matrix",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/slider",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/textField",
+			"type": "widget"
+		},
+		{
+			"id": "Components/Forecast.waComponent/Forecast.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "Components/Forecast.waComponent/Forecast.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/Forecast.waComponent/styles/Forecast.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/Forecast.waComponent/Forecast.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}

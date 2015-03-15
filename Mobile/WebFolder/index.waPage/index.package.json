@@ -8,15 +8,7 @@
 			"type": "core"
 		},
 		{
-			"id": "Widget/dataGrid",
-			"type": "widget"
-		},
-		{
 			"id": "Widget/login",
-			"type": "widget"
-		},
-		{
-			"id": "Widget/label",
 			"type": "widget"
 		},
 		{
@@ -24,20 +16,29 @@
 			"type": "widget"
 		},
 		{
-			"id": "Widget/textField",
+			"id": "Widget/image",
 			"type": "widget"
 		},
 		{
-			"id": "Widget/slider",
+			"id": "Widget/component",
 			"type": "widget"
 		},
 		{
-			"id": "Widget/matrix",
+			"id": "Widget/menuBar",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/menuItem",
 			"type": "widget"
 		},
 		{
 			"id": "Widget/richText",
 			"type": "widget"
+		},
+		{
+			"id": "Components/Home.waComponent/Home.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
 		},
 		{
 			"id": "default",

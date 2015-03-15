@@ -3,81 +3,21 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#matrixForecast .waf-widget.waf-clone-label5 {
+#richText6 {
+	z-index: 1;
+	width: 110px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
 	position: absolute;
 }
 
-#label5 {
-	z-index: 13;
-	width: 29px;
-	height: 13px;
-	top: 142px;
-	left: -25px;
-	position: absolute;
-}
-
-#textField1 {
-	z-index: 13;
-	width: 95px;
-	height: 22px;
-	top: 138px;
-	left: 9px;
-	position: absolute;
-}
-
-.waf-widget.waf-clone-richTextProbability {
-	position: absolute;
-}
-
-.waf-widget.waf-clone-textFieldID {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-richTextProbability {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-textFieldID {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-richText1 {
-	position: absolute;
-}
-
-.waf-widget.waf-clone-textFieldPropbability {
-	position: absolute;
-}
-
-.waf-widget.waf-clone-sliderProbability {
-	position: absolute;
-}
-
-.waf-widget.waf-clone-textFieldOutDesc {
-	position: absolute;
-}
-
-.waf-widget.waf-clone-textFieldOutName {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-textFieldPropbability {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-sliderProbability {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-textFieldOutName {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-textFieldOutDesc {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-textFieldOutComeName {
+#richText3 {
+	z-index: 1;
+	width: 109px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
 	position: absolute;
 }
 
@@ -89,186 +29,96 @@
 	position: absolute;
 }
 
-.waf-widget.waf-clone-label4 {
-	position: absolute;
-	min-width: 75px;
-}
-
 .waf-widget.waf-clone-textField2 {
 	position: absolute;
-}
-
-.waf-widget.waf-clone-label3 {
-	position: absolute;
-	min-width: 75px;
-}
-
-.waf-widget.waf-clone-textField1 {
-	position: absolute;
-}
-
-.waf-widget.waf-clone-label2 {
-	position: absolute;
-	min-width: 75px;
 }
 
 .waf-widget.waf-clone-container1 {
 	position: absolute;
 }
 
-#label4 {
-	z-index: 6;
-	width: 75px;
-	height: 16px;
-	top: 100px;
-	left: 43px;
-	position: absolute;
-	min-width: 75px;
-}
-
-#label3 {
-	z-index: 4;
-	width: 75px;
-	height: 16px;
-	top: 65px;
-	left: 43px;
-	position: absolute;
-	min-width: 75px;
-}
-
-#label2 {
-	z-index: 2;
-	width: 86px;
-	height: 13px;
-	top: 24px;
-	left: 32px;
-	position: absolute;
-	min-width: 75px;
-}
-
-#login1 {
-	z-index: 18;
-	width: 363px;
-	height: 32px;
-	top: 1px;
-	left: 0px;
-	position: absolute;
-}
-
 #waf-body {
-	background-color: rgb(170, 212, 255);
+	background-color: rgb(204, 204, 153);
 }
 
-#dataGridEvent {
-	z-index: 9;
-	width: 498px;
-	height: 317px;
-	top: 37px;
+#headercontainer {
+	z-index: 23;
+	height: 80px;
+	top: 0px;
+	left: 5px;
+	right: 5px;
+	position: absolute;
+	background-color: rgb(204, 204, 204);
+}
+
+#imageLogo {
+	z-index: 2;
+	width: 280px;
+	height: 40px;
+	top: 2px;
+	left: 5px;
+	position: absolute;
+}
+
+#loginMain {
+	z-index: 1;
+	width: 281px;
+	height: 32px;
+	top: 2px;
+	right: 5px;
+	position: absolute;
+}
+
+#componentMain {
+	z-index: 24;
+	height: 600px;
+	top: 85px;
+	left: 5px;
+	right: 5px;
+	position: absolute;
+	background-color: transparent;
+	border-top-style: solid;
+	border-top-width: 0px;
+	border-top-color: rgb(153, 153, 153);
+	border-left-style: solid;
+	border-left-width: 0px;
+	border-left-color: rgb(153, 153, 153);
+	border-right-style: solid;
+	border-right-width: 0px;
+	border-right-color: rgb(153, 153, 153);
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+	border-bottom-color: rgb(153, 153, 153);
+	-webkit-box-shadow: rgba(255, 255, 255, 0) 0px 3px 6px 0px;
+	 -moz-box-shadow: rgba(255, 255, 255, 0) 0px 3px 6px 0px;
+	 box-shadow: rgba(255, 255, 255, 0) 0px 3px 6px 0px;
+	box-shadow: rgba(255, 255, 255, 0) 0px 3px 6px 0px;
+}
+
+#menuBarMain {
+	z-index: 26;
+	width: 223px;
+	height: 26px;
+	top: 46px;
+	left: 7px;
+	position: absolute;
+}
+
+#menuHome {
+	z-index: 1;
+	width: 110px;
+	height: 24px;
+	top: 0px;
 	left: 0px;
 	position: absolute;
 }
 
-#matrixForecast .waf-widget.waf-clone-textField3 {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-slider1 {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-label4 {
-	position: absolute;
-	min-width: 75px;
-}
-
-#matrixForecast .waf-widget.waf-clone-textField2 {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-label3 {
-	position: absolute;
-	min-width: 75px;
-}
-
-#matrixForecast .waf-widget.waf-clone-textField1 {
-	position: absolute;
-}
-
-#matrixForecast .waf-widget.waf-clone-label2 {
-	position: absolute;
-	min-width: 75px;
-}
-
-#matrixForecast {
-	z-index: 22;
-	width: 330px;
-	height: 755px;
+#menuAdmin {
+	z-index: 3;
+	width: 110px;
+	height: 24px;
 	top: 0px;
-	left: 506px;
-	position: absolute;
-	background-color: rgb(255, 212, 170);
-}
-
-#containerForecast {
-	z-index: 1;
-	width: 304px;
-	height: 174px;
-	top: 10px;
-	left: 10px;
-	position: absolute;
-}
-
-#textFieldOutDesc {
-	z-index: 4;
-	width: 131px;
-	height: 22px;
-	top: 62px;
-	left: 123px;
-	position: absolute;
-}
-
-#textFieldOutName {
-	z-index: 2;
-	width: 129px;
-	height: 22px;
-	top: 20px;
-	left: 123px;
-	position: absolute;
-}
-
-#sliderProbability {
-	z-index: 6;
-	width: 162px;
-	height: 8px;
-	top: 104px;
-	left: 123px;
-	position: absolute;
-}
-
-#textFieldPropbability {
-	z-index: 8;
-	width: 131px;
-	height: 22px;
-	top: 139px;
-	left: 123px;
-	position: absolute;
-}
-
-#textFieldID {
-	z-index: 10;
-	width: 41px;
-	height: 22px;
-	top: 3px;
-	left: 253px;
-	position: absolute;
-}
-
-#richTextProbability {
-	z-index: 11;
-	width: 100px;
-	height: 13px;
-	top: 117px;
-	left: 12px;
+	left: 0px;
 	position: absolute;
 }
 

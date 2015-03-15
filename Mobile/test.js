@@ -53,7 +53,7 @@ ds.Result.remove();
 //ds.Result.length;	
 //ds.Result.query("probability > 0")
 //ds.Result.query("probability>0").probability;
-//ds.Result.all().sum
+ds.Result.all()
 //var a = {};
 //var b={}
 //a.name="able"

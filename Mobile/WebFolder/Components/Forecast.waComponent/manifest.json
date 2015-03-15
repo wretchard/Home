@@ -1,0 +1,10 @@
+{
+	"name": "Forecast",
+	"html": "Forecast.html",
+	"scripts": [
+		"Forecast.js"
+	],
+	"styles": [
+		"Forecast.css"
+	]
+}

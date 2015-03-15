@@ -1,0 +1,35 @@
+{
+	"name": "Mobile/Components/Admin.waComponent",
+	"version": "1.0.0",
+	"webComponent": "Components/Admin.waComponent/Admin.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Components/Admin.waComponent/Admin.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "Components/Admin.waComponent/Admin.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/Admin.waComponent/styles/Admin.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/Admin.waComponent/Admin.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}

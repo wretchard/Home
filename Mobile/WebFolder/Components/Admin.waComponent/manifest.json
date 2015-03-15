@@ -1,0 +1,10 @@
+{
+	"name": "Admin",
+	"html": "Admin.html",
+	"scripts": [
+		"Admin.js"
+	],
+	"styles": [
+		"Admin.css"
+	]
+}
