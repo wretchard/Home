@@ -294,10 +294,17 @@
 			"methods" : 
 			[
 				{
-					"name" : "fixSliders",
+					"name" : "loadValues",
 					"applyTo" : "entityCollection",
 					"scope" : "public",
-					"from" : "$mainModel.Result.collectionMethods.fixSliders",
+					"from" : "$mainModel.Result.collectionMethods.loadValues",
+					"userDefined" : true
+				},
+				{
+					"name" : "removeUnused",
+					"applyTo" : "entityCollection",
+					"scope" : "public",
+					"from" : "$mainModel.Result.collectionMethods.removeUnused",
 					"userDefined" : true
 				}
 			],

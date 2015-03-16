@@ -24,10 +24,6 @@
 			"type": "widget"
 		},
 		{
-			"id": "Widget/dataGrid",
-			"type": "widget"
-		},
-		{
 			"id": "Widget/slider",
 			"type": "widget"
 		},

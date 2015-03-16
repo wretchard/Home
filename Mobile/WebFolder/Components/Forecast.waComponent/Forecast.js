@@ -2,6 +2,7 @@
 (function Component (id) {// @lock
 
 // Add the code that needs to be shared between components here
+var foreCastArray;
 
 function constructor (id) {
 
@@ -30,13 +31,39 @@ function constructor (id) {
 
 
 	// @region namespaceDeclaration// @startlock
+	var buttonSave = {};	// @button
 	var sliderProbability = {};	// @slider
 	var resultEvent = {};	// @dataSource
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	buttonSave.click = function buttonSave_click (event)// @startlock
+	{// @endlock
+		var returnArray=[];
+		
+		$$('componentMain').sources.resultArray.getElements(0, $$('componentMain').sources.resultArray.length, 
+		{onSuccess: function(event) {
+		
+        event.elements.forEach(function(element) {
+        	obJ={};
+            obJ.ID=element.ID;
+            obJ.outDesc=element.outDesc;
+            obJ.outName=element.outName;
+            obJ.probability=element.probability;
+            returnArray.push(obJ);
+        })
+//        console.log(returnArray);
+        $$('componentMain').sources.result.loadValues(returnArray, {onSuccess: function(event) {
+        	console.log(event.result);
+        }})
+		}
+//		
+		});
+
+	};// @lock
 	
-	var foreCastArray;
+	
 
 	sliderProbability.slidestop = function sliderProbability_slidestop (event)// @startlock
 	{// @endlock
@@ -93,6 +120,7 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_buttonSave", "click", buttonSave.click, "WAF");
 	WAF.addListener(this.id + "_sliderProbability", "slidestop", sliderProbability.slidestop, "WAF");
 	WAF.addListener(this.id + "_result", "onCollectionChange", resultEvent.onCollectionChange, "WAF");
 	// @endregion// @endlock

@@ -16,18 +16,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	menuHome.click = function menuHome_click (event)// @startlock
 	{// @endlock
 		var length=$$('componentMain').sources.resultArray.length;
-		console.log(length);
-//		$$('componentMain').sources.resultArray.getElements(0, length, function(event) 
-//		{
-//			event.elements.forEach(function(element) {
-//				element.removeCurrent()
-//			})
-//		})
+
 		for(var i=0; i< length; i++) {
 			$$('componentMain').sources.resultArray.getCurrentElement()
 			$$('componentMain').sources.resultArray.removeCurrent()
 		}
-		
+		   if($$('componentMain').sources.result.length!=0){
+				$$('componentMain').sources.result.removeUnused()
+			} else {return "nothing"}
+					
 		$$('componentMain').loadComponent('/Components/Home.waComponent');
 	};// @lock
 var oldValue // the former value of the filled value

@@ -104,8 +104,8 @@
 #{id}label18 {
 	z-index: 10;
 	width: 75px;
-	height: 13px;
-	top: 151px;
+	height: 16px;
+	top: 150px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -123,8 +123,8 @@
 #{id}label17 {
 	z-index: 8;
 	width: 75px;
-	height: 13px;
-	top: 116px;
+	height: 16px;
+	top: 115px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -133,7 +133,7 @@
 #{id}label16 {
 	z-index: 6;
 	width: 75px;
-	height: 13px;
+	height: 16px;
 	top: 86px;
 	left: 15px;
 	position: absolute;
@@ -142,8 +142,8 @@
 
 #{id}richText10 {
 	z-index: 6;
-	width: 115px;
-	height: 13px;
+	width: 107px;
+	height: 16px;
 	top: 86px;
 	left: 95px;
 	position: absolute;
@@ -152,7 +152,7 @@
 #{id}label15 {
 	z-index: 4;
 	width: 75px;
-	height: 13px;
+	height: 16px;
 	top: 53px;
 	left: 15px;
 	position: absolute;
@@ -161,8 +161,8 @@
 
 #{id}richText9 {
 	z-index: 4;
-	width: 121px;
-	height: 13px;
+	width: 111px;
+	height: 16px;
 	top: 53px;
 	left: 95px;
 	position: absolute;
@@ -171,7 +171,7 @@
 #{id}label14 {
 	z-index: 2;
 	width: 75px;
-	height: 13px;
+	height: 16px;
 	top: 20px;
 	left: 15px;
 	position: absolute;
@@ -180,8 +180,8 @@
 
 #{id}richText8 {
 	z-index: 2;
-	width: 83px;
-	height: 13px;
+	width: 80px;
+	height: 16px;
 	top: 20px;
 	left: 95px;
 	position: absolute;
@@ -196,15 +196,6 @@
 	position: absolute;
 }
 
-#{id}dataGrid1 {
-	z-index: 10;
-	width: 492px;
-	height: 217px;
-	top: 329px;
-	left: 6px;
-	position: absolute;
-}
-
 .waf-widget.waf-clone-{id}slider2 {
 	position: absolute;
 }
@@ -215,27 +206,27 @@
 
 #{id}matrix1 {
 	z-index: 5;
-	width: 608px;
-	height: 609px;
-	top: 32px;
-	left: 503px;
+	width: 870px;
+	height: 452px;
+	top: 1px;
+	left: 388px;
 	position: absolute;
 	background-color: rgb(204, 204, 153);
 }
 
 #{id}label6 {
 	z-index: 4;
-	width: 106px;
-	height: 20px;
-	top: 40px;
-	left: -109px;
+	width: 98px;
+	height: 21px;
+	top: 2px;
+	left: -101px;
 	position: absolute;
 	color: rgb(0, 51, 102);
 	font-size: 18px;
 }
 
 #{id}label5 {
-	z-index: 8;
+	z-index: 7;
 	width: 75px;
 	height: 13px;
 	top: 245px;
@@ -247,7 +238,7 @@
 }
 
 #{id}richText5 {
-	z-index: 8;
+	z-index: 7;
 	width: 110px;
 	height: 13px;
 	top: 263px;
@@ -258,8 +249,8 @@
 #{id}label4 {
 	z-index: 6;
 	width: 75px;
-	height: 13px;
-	top: 207px;
+	height: 16px;
+	top: 204px;
 	left: 19px;
 	position: absolute;
 	min-width: 75px;
@@ -269,8 +260,8 @@
 
 #{id}richText4 {
 	z-index: 6;
-	width: 103px;
-	height: 13px;
+	width: 93px;
+	height: 16px;
 	top: 225px;
 	left: 19px;
 	position: absolute;
@@ -279,8 +270,8 @@
 #{id}label3 {
 	z-index: 5;
 	width: 95px;
-	height: 13px;
-	top: 84px;
+	height: 16px;
+	top: 81px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -290,8 +281,8 @@
 
 #{id}richText3 {
 	z-index: 5;
-	width: 132px;
-	height: 13px;
+	width: 120px;
+	height: 16px;
 	top: 102px;
 	left: 15px;
 	position: absolute;
@@ -300,8 +291,8 @@
 #{id}label2 {
 	z-index: 4;
 	width: 75px;
-	height: 13px;
-	top: 45px;
+	height: 16px;
+	top: 42px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -311,8 +302,8 @@
 
 #{id}richText2 {
 	z-index: 4;
-	width: 103px;
-	height: 13px;
+	width: 91px;
+	height: 16px;
 	top: 63px;
 	left: 15px;
 	position: absolute;
@@ -321,8 +312,8 @@
 #{id}label1 {
 	z-index: 2;
 	width: 75px;
-	height: 13px;
-	top: 10px;
+	height: 16px;
+	top: 7px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -332,8 +323,8 @@
 
 #{id}richText1 {
 	z-index: 2;
-	width: 53px;
-	height: 13px;
+	width: 50px;
+	height: 16px;
 	top: 28px;
 	left: 15px;
 	position: absolute;
@@ -347,17 +338,17 @@
 	z-index: 3;
 	width: 375px;
 	height: 284px;
-	top: 40px;
+	top: 2px;
 	left: 2px;
 	position: absolute;
 }
 
 #{id}buttonSave {
-	z-index: 6;
+	z-index: 8;
 	width: 92px;
 	height: 22px;
-	top: 4px;
-	left: 386px;
+	top: 8px;
+	left: 265px;
 	position: absolute;
 }
 
