@@ -20,6 +20,14 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/button",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
 			"id": "Widget/slider",
 			"type": "widget"
 		},

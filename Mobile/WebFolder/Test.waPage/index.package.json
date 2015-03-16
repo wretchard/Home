@@ -1,5 +1,5 @@
 {
-	"name": "Mobile/Admin.waPage/index.html",
+	"name": "Mobile/Test.waPage/index.html",
 	"version": "1.0.0",
 	"loadDependencies": [
 		{
@@ -8,19 +8,15 @@
 			"type": "core"
 		},
 		{
-			"id": "Widget/container",
-			"type": "widget"
-		},
-		{
-			"id": "Widget/login",
-			"type": "widget"
-		},
-		{
 			"id": "Widget/dataGrid",
 			"type": "widget"
 		},
 		{
-			"id": "Widget/textField",
+			"id": "Widget/container",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/richText",
 			"type": "widget"
 		},
 		{
@@ -28,7 +24,11 @@
 			"type": "widget"
 		},
 		{
-			"id": "Widget/button",
+			"id": "Widget/slider",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/matrix",
 			"type": "widget"
 		},
 		{
@@ -36,7 +36,7 @@
 			"type": "theme"
 		},
 		{
-			"id": "Admin.waPage/styles/index.css",
+			"id": "Test.waPage/styles/index.css",
 			"path": "WEBFOLDER",
 			"type": "style"
 		},
@@ -46,7 +46,7 @@
 			"type": "style"
 		},
 		{
-			"id": "Admin.waPage/scripts/index.js",
+			"id": "Test.waPage/scripts/index.js",
 			"path": "WEBFOLDER",
 			"type": "script"
 		}
