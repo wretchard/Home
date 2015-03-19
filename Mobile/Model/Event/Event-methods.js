@@ -8,10 +8,11 @@ model.Event.entityMethods.createResult = function() {
 //	var timeStamp=Date.now() / 1000 | 0
 	var timeStamp=Date();
 	var uuid=generateUUID();
+	var outLength=this.outcomes.length
 	this.outcomes.forEach(
 		function(outcome) {
 			newResult = new ds.Result();
-			newResult.probability=0;
+			newResult.probability=(100/outLength);
 			newResult.user=cU;
 			newResult.timeS=timeStamp;
 			newResult.outcome=outcome;

@@ -26,6 +26,7 @@ function addOneUser(emailAdd, password, role, fullName){
 //ds.Outcome.query("event.ID=1")
 //ds.User.remove();
 //addOneUser("test@email.com", "password", "Admin", "test")
+//addOneUser("tester@email.com", "password", "Admin", "tester")
 //ds.Result.outcome= ds.Outcome.find("ID=1")
 //ds.Result.outcome.save();
 
@@ -50,10 +51,13 @@ function addOneUser(emailAdd, password, role, fullName){
 //currentUser().ID
 //ds.User("B530A0032802F54B9FC1312EAE362802")
 //ds.Result.remove();
-//ds.Result.length;	
+ds.Result.all().probability;
 //ds.Result.query("probability > 0")
 //ds.Result.query("probability>0").probability;
-ds.Result.length;
+
+//a=ds.Result.query("batch=:1", "E30A2E5CCE7B354BAB94C8EEDE3BF568")
+//b.find(
+
 //var a = {};
 //var b={}
 //a.name="able"

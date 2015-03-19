@@ -53,12 +53,19 @@
 				"panelColor" : "#C4BD97",
 				"panel" : 
 				{
-					"isOpen" : "true",
+					"isOpen" : "false",
 					"pathVisible" : true,
 					"position" : 
 					{
 						"X" : 29,
 						"Y" : 44
+					}
+				},
+				"attributes" : 
+				{
+					"timeS" : 
+					{
+						"note" : "time in milliseconds from Jan 1 1970"
 					}
 				}
 			}
@@ -67,7 +74,7 @@
 		{
 			"scriptMode" : "manual",
 			"workspaceLeft" : 0,
-			"workspaceTop" : 0,
+			"workspaceTop" : 7,
 			"lastScriptLocation" : 
 			{
 				"User" : 
@@ -280,7 +287,8 @@
 					"name" : "timeS",
 					"kind" : "storage",
 					"scope" : "public",
-					"type" : "number"
+					"type" : "number",
+					"defaultValue" : "0"
 				},
 				{
 					"name" : "batch",
@@ -295,9 +303,9 @@
 			[
 				{
 					"name" : "loadValues",
-					"applyTo" : "entityCollection",
+					"applyTo" : "dataClass",
 					"scope" : "public",
-					"from" : "$mainModel.Result.collectionMethods.loadValues",
+					"from" : "$mainModel.Result.methods.loadValues",
 					"userDefined" : true
 				},
 				{

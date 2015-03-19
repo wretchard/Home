@@ -19,6 +19,7 @@ function constructor (id) {
 			$$('componentMain').sources.event.createResult(
 			{onSuccess: function(event) {
 				$$('componentMain').sources.result.query("batch=:1", event.result)
+				
 			}, onError: function(event){
 				console.log(event)
 			}
@@ -55,7 +56,8 @@ function constructor (id) {
         })
 //        console.log(returnArray);
         $$('componentMain').sources.result.loadValues(returnArray, {onSuccess: function(event) {
-        	console.log(event.result);
+        	$$('componentMain_richMessage2').setValue(event.result)
+//        	console.log(event.result);
         }})
 		}
 //		
@@ -72,26 +74,39 @@ function constructor (id) {
 		var norm=0;
 		var adj=0;
 		sumOfProbability=0;
+//		var sumOfProbability;
 		
 		for(i=0;i<foreCastArray.length; i++) {
 			$$('componentMain').sources.resultArray.selectByKey(foreCastArray[i].ID)
 			sumOfProbability+=$$('componentMain').sources.resultArray.getCurrentElement().probability
 			
 			}
+			
+		norm=sumOfProbability-currProb; //delta
 		
-		norm=sumOfProbability-currProb;
 		adj=100-sumOfProbability;
-		
-		if(sumOfProbability >100) {
+		if (adj==100) { // this means all the other numbers are zero
+
+			$$('componentMain').sources.resultArray.selectByKey(currID);
+			$$('componentMain').sources.resultArray.getCurrentElement().probability=100;
+			$$('componentMain').sources.resultArray.sync()
+			return;
+		}
+
 			for(i=0;i<foreCastArray.length; i++) {
+
 			if (foreCastArray[i].ID !==currID) {
+
 			$$('componentMain').sources.resultArray.selectByKey(foreCastArray[i].ID)
 			indProb=$$('componentMain').sources.resultArray.getCurrentElement().probability
-			a=adj*(indProb/norm)
+			if(norm == 0) {
+				a=adj/(foreCastArray.length-1)
+			} else {
+			a=adj*(indProb/norm)}
 			$$('componentMain').sources.resultArray.getCurrentElement().probability+=a
+
 			}
 			}
-		}
 		$$('componentMain').sources.resultArray.sync()
 	};// @lock
 
@@ -104,7 +119,8 @@ function constructor (id) {
 						//remove the existing elements of the sources.resultArray
 						foreCastArray=event.result;
 						//fill the local array with new data
-						for(var i=0; i< event.result.length;i++) {
+						var lth= event.result.length;
+						for(var i=0; i< lth;i++) {
 							$$('componentMain').sources.resultArray.addNewElement()
 							$$('componentMain').sources.resultArray.getCurrentElement().ID=event.result[i].ID
 							$$('componentMain').sources.resultArray.getCurrentElement().outName =event.result[i].outName;
@@ -112,7 +128,12 @@ function constructor (id) {
 							$$('componentMain').sources.resultArray.getCurrentElement().probability=event.result[i].probability;
 							$$('componentMain').sources.resultArray.save();	
 						}
+//						for(var i=0; i< lth;i++) {
+//							debugger;
+//							$$('componentMain').sources.resultArray.selectPrevious()
+//						}
 						$$('componentMain').sources.resultArray.sync();
+//						$$('componentMain').sources.resultArray.select(0);
 						}
 					}
 					)		

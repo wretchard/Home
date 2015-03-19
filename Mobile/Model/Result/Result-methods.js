@@ -1,44 +1,40 @@
 
 
-//model.Result.collectionMethods.fixSliders = function(varID, batch) {
-//	returnObj={};
-//	var vObj = this.compute("probability")
-//	returnObj.sum=vObj.probability.sum;
-//	returnObj.length=this.length;
-//	returnObj.currID=varID;
-//	returnObj.batch=batch;
-//	var adJust=(100-returnObj.sum)
-//	if (adJust>=0) {return returnObj} // exit routine if no adjustments neded
-//	
-//	curColl=this.query("ID=:1", varID); //filled value
-//	remColl=this.minus(curColl); //remaining values	
-//	var remCompute=remColl.compute("probability");
-//	var remDenom=remCompute.probability.sum;
-//	remColl.forEach(
-//		function(prob) {
-//			Iprob=prob.probability
-//			Iprob=Iprob+(adJust*(Iprob/remDenom))
-//			prob.probability=Iprob;
-//			prob.save();	
-//		}
-//	);
-//	return returnObj
-//	
-//};
-//model.Result.collectionMethods.fixSliders.scope="public";
-
-
 model.Result.collectionMethods.removeUnused = function() {
-		var vObj = this.compute("probability");
-		if(vObj.probability.sum ==0) {
+	if (this.length >0) {
+		coll = this.compute("timeS");
+		if (coll.timeS.min == 0) {
 			this.remove();
+			return "removed";	
 		}
+	}
+
 };
 model.Result.collectionMethods.removeUnused.scope="public";
 
 
-model.Result.collectionMethods.loadValues = function(arrObj) {
-	console.log(arrObj);
-	return "bingo"
+
+
+model.Result.methods.loadValues = function(arrObj) {
+	if(arrObj.length == 0) {return 
+	"There is an error"
+	}
+	
+	try {
+	var timeStamp=Date.now();
+	var f =ds.Result(arrObj[0].ID)
+	collSave=ds.Result.query("batch=:1", f.batch)
+	for(var i=0; i<arrObj.length; i++) {
+	 var upDate=collSave.find("ID=:1", arrObj[i].ID)
+	 upDate.probability = arrObj[i].probability;
+	 upDate.timeS=timeStamp;
+	 upDate.save();
+		}
+	}
+	catch(err) 
+	{return "error"}
+	
+	console.log(collSave);
+	return "You have successfully saved your forecast."
 };
-model.Result.collectionMethods.loadValues.scope="public";
+model.Result.methods.loadValues.scope="public";

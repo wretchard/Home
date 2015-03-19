@@ -11,6 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		
 
 	// @region namespaceDeclaration// @startlock
 	var buttonForecast = {};	// @button
@@ -18,11 +19,25 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	buttonForecast.mouseout = function buttonForecast_mouseout (event)// @startlock
+	{// @endlock
+		$$('componentMain_richMessage').setValue('');
+	};// @lock
+
+	buttonForecast.mouseover = function buttonForecast_mouseover (event)// @startlock
+	{// @endlock
+		$$('componentMain_richMessage').setValue("You must login to use this feature. Use 'tester@email.com' and 'password' as credentials")
+	};// @lock
+
 	buttonForecast.click = function buttonForecast_click (event)// @startlock
 	{// @endlock
-//		console.log($$('componentMain').sources.event.ID);
+		if (waf.directory.currentUser()== null) {
+			$$('componentMain_richMessage').setValue("You must login first.")
+			return;
+		}
+
 		var eventID=$$('componentMain').sources.event.ID;
-//		$$('componentMain').loadComponent('/Components/Forecast.waComponent');
+
 		$$('componentMain').loadComponent({ 
     		path: '/Components/Forecast.waComponent', 
     		userData: { eventID: eventID}
@@ -30,6 +45,8 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_buttonForecast", "mouseout", buttonForecast.mouseout, "WAF");
+	WAF.addListener(this.id + "_buttonForecast", "mouseover", buttonForecast.mouseover, "WAF");
 	WAF.addListener(this.id + "_buttonForecast", "click", buttonForecast.click, "WAF");
 	// @endregion// @endlock
 

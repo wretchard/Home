@@ -5,3 +5,4 @@ include("./Model/User/User-events.js");
 include("./Model/Event/Event-methods.js");
 
 include("./Model/Result/Result-methods.js");
+include("./Model/Result/Result-events.js");

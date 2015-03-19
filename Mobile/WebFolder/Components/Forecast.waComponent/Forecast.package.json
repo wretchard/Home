@@ -28,10 +28,6 @@
 			"type": "widget"
 		},
 		{
-			"id": "Widget/textField",
-			"type": "widget"
-		},
-		{
 			"id": "Components/Forecast.waComponent/Forecast.html",
 			"path": "WEBFOLDER",
 			"type": "html"

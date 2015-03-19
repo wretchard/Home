@@ -15,6 +15,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	menuHome.click = function menuHome_click (event)// @startlock
 	{// @endlock
+		try {
 		var length=$$('componentMain').sources.resultArray.length;
 
 		for(var i=0; i< length; i++) {
@@ -24,8 +25,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		   if($$('componentMain').sources.result.length!=0){
 				$$('componentMain').sources.result.removeUnused()
 			} else {return "nothing"}
-					
+			$$('componentMain').loadComponent('/Components/Home.waComponent');
+		}
+		catch(err) {			
 		$$('componentMain').loadComponent('/Components/Home.waComponent');
+	}
 	};// @lock
 var oldValue // the former value of the filled value
 
