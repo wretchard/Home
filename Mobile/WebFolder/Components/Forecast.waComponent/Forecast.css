@@ -127,8 +127,8 @@
 #{id}label17 {
 	z-index: 8;
 	width: 75px;
-	height: 13px;
-	top: 84px;
+	height: 16px;
+	top: 83px;
 	left: 11px;
 	position: absolute;
 	min-width: 75px;
@@ -139,8 +139,8 @@
 #{id}label16 {
 	z-index: 6;
 	width: 75px;
-	height: 13px;
-	top: 34px;
+	height: 16px;
+	top: 33px;
 	left: 10px;
 	position: absolute;
 	min-width: 75px;
@@ -161,10 +161,10 @@
 
 #{id}label15 {
 	z-index: 4;
-	width: 86px;
-	height: 13px;
-	top: 8px;
-	left: 190px;
+	width: 82px;
+	height: 16px;
+	top: 6px;
+	left: 194px;
 	position: absolute;
 	min-width: 75px;
 	font-weight: bold;
@@ -183,7 +183,7 @@
 #{id}label14 {
 	z-index: 2;
 	width: 75px;
-	height: 13px;
+	height: 16px;
 	top: 8px;
 	left: 9px;
 	position: absolute;
@@ -194,8 +194,8 @@
 
 #{id}richText8 {
 	z-index: 2;
-	width: 83px;
-	height: 13px;
+	width: 80px;
+	height: 16px;
 	top: 8px;
 	left: 89px;
 	position: absolute;
@@ -232,8 +232,8 @@
 	z-index: 2;
 	width: 106px;
 	height: 20px;
-	top: 32px;
-	left: -109px;
+	top: 4px;
+	left: 2px;
 	position: absolute;
 	color: rgb(0, 51, 102);
 	font-size: 18px;
@@ -242,8 +242,8 @@
 #{id}label5 {
 	z-index: 7;
 	width: 75px;
-	height: 13px;
-	top: 245px;
+	height: 16px;
+	top: 242px;
 	left: 18px;
 	position: absolute;
 	min-width: 75px;
@@ -253,8 +253,8 @@
 
 #{id}richText5 {
 	z-index: 7;
-	width: 110px;
-	height: 13px;
+	width: 98px;
+	height: 16px;
 	top: 263px;
 	left: 18px;
 	position: absolute;
@@ -263,8 +263,8 @@
 #{id}label4 {
 	z-index: 6;
 	width: 75px;
-	height: 13px;
-	top: 207px;
+	height: 16px;
+	top: 204px;
 	left: 19px;
 	position: absolute;
 	min-width: 75px;
@@ -274,8 +274,8 @@
 
 #{id}richText4 {
 	z-index: 6;
-	width: 103px;
-	height: 13px;
+	width: 93px;
+	height: 16px;
 	top: 225px;
 	left: 19px;
 	position: absolute;
@@ -284,8 +284,8 @@
 #{id}label3 {
 	z-index: 5;
 	width: 95px;
-	height: 13px;
-	top: 84px;
+	height: 16px;
+	top: 81px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -295,8 +295,8 @@
 
 #{id}richText3 {
 	z-index: 5;
-	width: 132px;
-	height: 13px;
+	width: 120px;
+	height: 16px;
 	top: 102px;
 	left: 15px;
 	position: absolute;
@@ -305,8 +305,8 @@
 #{id}label2 {
 	z-index: 4;
 	width: 75px;
-	height: 13px;
-	top: 45px;
+	height: 16px;
+	top: 42px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -316,8 +316,8 @@
 
 #{id}richText2 {
 	z-index: 4;
-	width: 103px;
-	height: 13px;
+	width: 91px;
+	height: 16px;
 	top: 63px;
 	left: 15px;
 	position: absolute;
@@ -326,8 +326,8 @@
 #{id}label1 {
 	z-index: 2;
 	width: 75px;
-	height: 13px;
-	top: 10px;
+	height: 16px;
+	top: 7px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -337,8 +337,8 @@
 
 #{id}richText1 {
 	z-index: 2;
-	width: 53px;
-	height: 13px;
+	width: 50px;
+	height: 16px;
 	top: 28px;
 	left: 15px;
 	position: absolute;
@@ -352,17 +352,17 @@
 	z-index: 2;
 	width: 375px;
 	height: 284px;
-	top: 32px;
+	top: 29px;
 	left: 2px;
 	position: absolute;
 }
 
 #{id}buttonSave {
-	z-index: 5;
+	z-index: 10;
 	width: 92px;
 	height: 22px;
-	top: 5px;
-	left: 283px;
+	top: 0px;
+	left: 284px;
 	position: absolute;
 }
 
