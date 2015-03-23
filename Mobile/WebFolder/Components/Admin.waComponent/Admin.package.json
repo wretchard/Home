@@ -12,6 +12,18 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/container",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/textField",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/button",
+			"type": "widget"
+		},
+		{
 			"id": "Components/Admin.waComponent/Admin.html",
 			"path": "WEBFOLDER",
 			"type": "html"

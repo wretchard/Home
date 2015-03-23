@@ -28,6 +28,14 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/dialog",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/image",
+			"type": "widget"
+		},
+		{
 			"id": "Components/Home.waComponent/Home.html",
 			"path": "WEBFOLDER",
 			"type": "html"

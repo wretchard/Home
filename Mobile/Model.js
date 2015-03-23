@@ -6,3 +6,4 @@ include("./Model/Event/Event-methods.js");
 
 include("./Model/Result/Result-methods.js");
 include("./Model/Result/Result-events.js");
+include("./Model/Outcome/Outcome-events.js");

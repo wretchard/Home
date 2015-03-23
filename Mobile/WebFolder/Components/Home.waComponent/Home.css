@@ -3,6 +3,98 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}richText4 {
+	z-index: 4;
+	height: 23px;
+	top: 30px;
+	left: 5px;
+	right: 87px;
+	position: absolute;
+	color: rgb(0, 51, 102);
+	font-size: 18px;
+}
+
+#{id}button4 {
+	z-index: 1;
+	width: 60px;
+	height: 20px;
+	top: 2px;
+	right: 73px;
+	position: absolute;
+}
+
+#{id}container4 {
+	z-index: 3;
+	height: 25px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	position: absolute;
+}
+
+#{id}container3 {
+	z-index: 2;
+	top: 25px;
+	bottom: 25px;
+	left: 0px;
+	right: 0px;
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+}
+
+#{id}button3 {
+	z-index: 3;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+	right: 8px;
+	position: absolute;
+}
+
+#{id}button2 {
+	z-index: 2;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+	right: 46px;
+	position: absolute;
+}
+
+#{id}button1 {
+	z-index: 1;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+	right: 27px;
+	position: absolute;
+}
+
+#{id}image1 {
+	width: 20px;
+	height: 20px;
+	top: 2px;
+	left: 2px;
+	position: absolute;
+}
+
+#{id}richText1 {
+	z-index: -1;
+	height: 14px;
+	top: 6px;
+	left: 28px;
+	right: 189px;
+	position: absolute;
+}
+
+#{id}container2 {
+	z-index: 1;
+	height: 25px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	position: absolute;
+}
+
 .waf-widget.waf-clone-{id}label10 {
 	position: absolute;
 	min-width: 75px;
@@ -102,7 +194,7 @@
 }
 
 #{id}label6 {
-	z-index: 7;
+	z-index: 4;
 	width: 251px;
 	height: 20px;
 	top: 5px;
@@ -232,5 +324,23 @@
 	position: absolute;
 	background-color: transparent;
 	font-size: 10px;
+}
+
+#{id}dialogWarning {
+	z-index: 17;
+	width: 294px;
+	height: 160px;
+	top: 37px;
+	left: 249px;
+	position: absolute;
+}
+
+#{id}buttonOK {
+	z-index: 2;
+	width: 60px;
+	height: 20px;
+	top: 2px;
+	right: 8px;
+	position: absolute;
 }
 

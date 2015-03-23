@@ -25,7 +25,7 @@
 				"panelColor" : "#D8D8D8",
 				"panel" : 
 				{
-					"isOpen" : "false",
+					"isOpen" : "true",
 					"pathVisible" : true,
 					"position" : 
 					{
@@ -39,7 +39,7 @@
 				"panelColor" : "#E5B9B7",
 				"panel" : 
 				{
-					"isOpen" : "false",
+					"isOpen" : "true",
 					"pathVisible" : true,
 					"position" : 
 					{
@@ -74,7 +74,7 @@
 		{
 			"scriptMode" : "manual",
 			"workspaceLeft" : 0,
-			"workspaceTop" : 7,
+			"workspaceTop" : 0,
 			"lastScriptLocation" : 
 			{
 				"User" : 
@@ -209,6 +209,21 @@
 					"type" : "Results",
 					"reversePath" : true,
 					"path" : "outcome"
+				},
+				{
+					"name" : "occurred",
+					"kind" : "storage",
+					"matchColumn" : "Occurred",
+					"scope" : "public",
+					"type" : "bool"
+				}
+			],
+			"events" : 
+			[
+				{
+					"kind" : "validate",
+					"from" : "$mainModel.Outcome.events.validate",
+					"userDefined" : true
 				}
 			],
 			"key" : 

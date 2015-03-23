@@ -11,13 +11,26 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		
 
+	
+		
 	// @region namespaceDeclaration// @startlock
+	var buttonOK = {};	// @button
+	var button4 = {};	// @button
 	var buttonForecast = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	buttonOK.click = function buttonOK_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId("dialogWarning")).closeDialog(); //ok button
+	};// @lock
+
+	button4.click = function button4_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId("dialog1")).closeDialog(); //cancel button
+	};// @lock
 
 	buttonForecast.mouseout = function buttonForecast_mouseout (event)// @startlock
 	{// @endlock
@@ -32,7 +45,8 @@ function constructor (id) {
 	buttonForecast.click = function buttonForecast_click (event)// @startlock
 	{// @endlock
 		if (waf.directory.currentUser()== null) {
-			$$('componentMain_richMessage').setValue("You must login first.")
+			$$(getHtmlId("dialogWarning")).displayDialog()
+			$$('componentMain_richText4').setValue("You must login first")
 			return;
 		}
 
@@ -45,6 +59,8 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_buttonOK", "click", buttonOK.click, "WAF");
+	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
 	WAF.addListener(this.id + "_buttonForecast", "mouseout", buttonForecast.mouseout, "WAF");
 	WAF.addListener(this.id + "_buttonForecast", "mouseover", buttonForecast.mouseover, "WAF");
 	WAF.addListener(this.id + "_buttonForecast", "click", buttonForecast.click, "WAF");

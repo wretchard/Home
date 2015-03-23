@@ -55,8 +55,8 @@ function distinctEvents() {
 //currentUser().ID
 //ds.User("B530A0032802F54B9FC1312EAE362802")
 //ds.Result.remove();
-a=ds.Event.all().outcomes.results
-a.query("me='tester3'")
+//a=ds.Event.all().outcomes.results
+//a.query("me='tester3'")
 
 
 //ds.Result.length;
@@ -78,3 +78,7 @@ a.query("me='tester3'")
 //c.name == "able"
  
 //ds.User.all();
+//a= ds.Event.all()
+//a.remove()
+a=ds.Outcome.all()
+//a.remove();

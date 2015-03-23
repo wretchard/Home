@@ -19,8 +19,8 @@
 	z-index: 9;
 	width: 60px;
 	height: 13px;
-	top: 85px;
-	left: 269px;
+	top: 48px;
+	left: 77px;
 	position: absolute;
 }
 
@@ -34,9 +34,9 @@
 
 .waf-widget.waf-clone-{id}label17 {
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 .waf-widget.waf-clone-{id}richText10 {
@@ -47,20 +47,21 @@
 
 .waf-widget.waf-clone-{id}label16 {
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 .waf-widget.waf-clone-{id}richText9 {
 	position: absolute;
+	background-color: transparent;
 }
 
 .waf-widget.waf-clone-{id}label15 {
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 .waf-widget.waf-clone-{id}richText8 {
@@ -70,8 +71,8 @@
 .waf-widget.waf-clone-{id}label14 {
 	position: absolute;
 	min-width: 75px;
-	font-weight: bold;
 	color: rgb(0, 51, 102);
+	font-weight: normal;
 }
 
 .waf-widget.waf-clone-{id}container3 {
@@ -84,33 +85,35 @@
 
 #{id}matrix1 .waf-widget.waf-clone-{id}label17 {
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 #{id}matrix1 .waf-widget.waf-clone-{id}richText10 {
 	position: absolute;
 	font-weight: normal;
 	color: rgb(0, 0, 0);
+	background-color: transparent;
 }
 
 #{id}matrix1 .waf-widget.waf-clone-{id}label16 {
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 #{id}matrix1 .waf-widget.waf-clone-{id}richText9 {
 	position: absolute;
+	background-color: transparent;
 }
 
 #{id}matrix1 .waf-widget.waf-clone-{id}label15 {
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 #{id}matrix1 .waf-widget.waf-clone-{id}richText8 {
@@ -120,91 +123,93 @@
 #{id}matrix1 .waf-widget.waf-clone-{id}label14 {
 	position: absolute;
 	min-width: 75px;
-	font-weight: bold;
 	color: rgb(0, 51, 102);
+	font-weight: normal;
 }
 
 #{id}label17 {
 	z-index: 8;
-	width: 75px;
-	height: 16px;
-	top: 83px;
-	left: 11px;
+	width: 150px;
+	height: 13px;
+	top: 48px;
+	left: 5px;
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 #{id}label16 {
 	z-index: 6;
-	width: 75px;
-	height: 16px;
-	top: 33px;
-	left: 10px;
+	width: 150px;
+	height: 13px;
+	top: 2px;
+	left: 397px;
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 #{id}richText10 {
 	z-index: 6;
-	width: 481px;
-	height: 18px;
-	top: 32px;
-	left: 90px;
+	width: 275px;
+	height: 13px;
+	top: 20px;
+	left: 397px;
 	position: absolute;
 	font-weight: normal;
 	color: rgb(0, 0, 0);
+	background-color: transparent;
 }
 
 #{id}label15 {
 	z-index: 4;
-	width: 82px;
-	height: 16px;
-	top: 6px;
-	left: 194px;
+	width: 150px;
+	height: 13px;
+	top: 2px;
+	left: 117px;
 	position: absolute;
-	min-width: 75px;
 	font-weight: bold;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 #{id}richText9 {
 	z-index: 4;
-	width: 286px;
-	height: 17px;
-	top: 6px;
-	left: 281px;
+	width: 273px;
+	height: 19px;
+	top: 20px;
+	left: 117px;
 	position: absolute;
+	background-color: transparent;
 }
 
 #{id}label14 {
 	z-index: 2;
 	width: 75px;
-	height: 16px;
-	top: 8px;
-	left: 9px;
+	height: 13px;
+	top: 2px;
+	left: 5px;
 	position: absolute;
 	min-width: 75px;
-	font-weight: bold;
 	color: rgb(0, 51, 102);
+	font-weight: normal;
 }
 
 #{id}richText8 {
 	z-index: 2;
-	width: 80px;
-	height: 16px;
-	top: 8px;
-	left: 89px;
+	width: 83px;
+	height: 20px;
+	top: 20px;
+	left: 5px;
 	position: absolute;
 }
 
 #{id}container3 {
 	z-index: 1;
-	width: 583px;
-	height: 110px;
+	width: 683px;
+	height: 86px;
 	top: 10px;
 	left: 10px;
 	position: absolute;
@@ -220,7 +225,7 @@
 
 #{id}matrix1 {
 	z-index: 4;
-	width: 605px;
+	width: 714px;
 	height: 600px;
 	top: 0px;
 	left: 387px;
@@ -230,9 +235,9 @@
 
 #{id}label6 {
 	z-index: 2;
-	width: 106px;
-	height: 20px;
-	top: 4px;
+	width: 98px;
+	height: 21px;
+	top: 3px;
 	left: 2px;
 	position: absolute;
 	color: rgb(0, 51, 102);
@@ -368,10 +373,10 @@
 
 #{id}sliderProbability {
 	z-index: 8;
-	width: 162px;
+	width: 660px;
 	height: 8px;
-	top: 87px;
-	left: 91px;
+	top: 66px;
+	left: 5px;
 	position: absolute;
 }
 
