@@ -3,6 +3,134 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}button10 {
+	width: 92px;
+	height: 22px;
+	top: 162px;
+	left: 399px;
+	position: absolute;
+	z-index: 11;
+}
+
+#{id}button9 {
+	width: 92px;
+	height: 22px;
+	top: 162px;
+	left: 300px;
+	position: absolute;
+	z-index: 10;
+}
+
+#{id}button8 {
+	width: 92px;
+	height: 22px;
+	top: 162px;
+	left: 202px;
+	position: absolute;
+	z-index: 9;
+}
+
+#{id}button7 {
+	width: 92px;
+	height: 22px;
+	top: 162px;
+	left: 104px;
+	position: absolute;
+	z-index: 8;
+}
+
+#{id}button6 {
+	z-index: 7;
+	width: 92px;
+	height: 22px;
+	top: 163px;
+	left: 6px;
+	position: absolute;
+}
+
+#{id}label10 {
+	z-index: 11;
+	width: 157px;
+	height: 20px;
+	top: 365px;
+	left: 697px;
+	position: absolute;
+	font-size: 18px;
+	color: rgb(0, 51, 102);
+}
+
+#{id}label9 {
+	z-index: 6;
+	width: 75px;
+	height: 13px;
+	top: 140px;
+	left: 28px;
+	position: absolute;
+	min-width: 75px;
+	font-weight: bold;
+	color: rgb(0, 51, 102);
+}
+
+#{id}checkbox1 {
+	z-index: 6;
+	width: 18px;
+	height: 16px;
+	top: 139px;
+	left: 5px;
+	position: absolute;
+}
+
+#{id}label8 {
+	z-index: 4;
+	width: 150px;
+	height: 13px;
+	top: 44px;
+	left: 5px;
+	position: absolute;
+	min-width: 150px;
+	font-weight: bold;
+	color: rgb(0, 51, 102);
+}
+
+#{id}textField6 {
+	z-index: 4;
+	width: 487px;
+	height: 72px;
+	top: 62px;
+	left: 5px;
+	position: absolute;
+}
+
+#{id}label7 {
+	z-index: 2;
+	width: 150px;
+	height: 13px;
+	top: 2px;
+	left: 5px;
+	position: absolute;
+	font-weight: bold;
+	min-width: 150px;
+	color: rgb(0, 51, 102);
+}
+
+#{id}textField5 {
+	z-index: 2;
+	width: 488px;
+	height: 22px;
+	top: 20px;
+	left: 5px;
+	position: absolute;
+}
+
+#{id}container2 {
+	z-index: 10;
+	width: 508px;
+	height: 214px;
+	top: 390px;
+	left: 697px;
+	position: absolute;
+}
+
 #{id}button5 {
 	width: 92px;
 	height: 22px;
@@ -50,13 +178,13 @@
 
 #{id}label6 {
 	z-index: 9;
-	width: 143px;
-	height: 22px;
-	top: 363px;
+	width: 129px;
+	height: 20px;
+	top: 365px;
 	left: 5px;
 	position: absolute;
-	font-size: 20px;
 	color: rgb(0, 51, 102);
+	font-size: 18px;
 }
 
 #{id}label5 {

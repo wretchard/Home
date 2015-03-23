@@ -148,7 +148,7 @@
 	width: 314px;
 	height: 550px;
 	top: 30px;
-	left: 512px;
+	left: 576px;
 	position: absolute;
 	background-color: rgb(204, 204, 153);
 	border-top-style: solid;
@@ -229,7 +229,7 @@
 
 #{id}richText3 {
 	z-index: 4;
-	width: 132px;
+	width: 300px;
 	height: 13px;
 	top: 53px;
 	left: 95px;
@@ -250,7 +250,7 @@
 
 #{id}richText2 {
 	z-index: 2;
-	width: 103px;
+	width: 300px;
 	height: 13px;
 	top: 20px;
 	left: 95px;
@@ -272,7 +272,7 @@
 
 #{id}dataGridEvents {
 	z-index: 4;
-	width: 500px;
+	width: 564px;
 	height: 250px;
 	top: 30px;
 	left: 5px;
@@ -311,7 +311,7 @@
 	width: 134px;
 	height: 22px;
 	top: 2px;
-	left: 676px;
+	left: 575px;
 	position: absolute;
 }
 

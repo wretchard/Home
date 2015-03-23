@@ -24,6 +24,10 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/checkbox",
+			"type": "widget"
+		},
+		{
 			"id": "Components/Admin.waComponent/Admin.html",
 			"path": "WEBFOLDER",
 			"type": "html"
