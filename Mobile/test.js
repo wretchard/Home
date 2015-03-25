@@ -22,6 +22,19 @@ function addOneUser(emailAdd, password, role, fullName){
 	}).save();
 }
 
+function countAllTables() {
+	
+	var counter;
+	var out =[];
+	for (var vName in ds.dataClasses)  // put each datastore class of ds
+	{
+		counter=ds.dataClasses[vName];
+		out.push(vName + " is " + counter.length);
+	};	
+	return out;
+};
+
+
 function distinctEvents() {
 		
 }
@@ -78,7 +91,8 @@ function distinctEvents() {
 //c.name == "able"
  
 //ds.User.all();
-//a= ds.Event.all()
+//a= ds.Event.query("outcomes.ID !==null")
 //a.remove()
-a=ds.Outcome.all()
-//a.remove();
+countAllTables()
+
+//ds.Result.all().remove()

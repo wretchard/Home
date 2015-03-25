@@ -39,14 +39,14 @@ function constructor (id) {
 
 	buttonForecast.mouseover = function buttonForecast_mouseover (event)// @startlock
 	{// @endlock
-		$$('componentMain_richMessage').setValue("You must login to use this feature. Use 'tester@email.com' and 'password' as credentials")
+		$$('componentMain_richMessage').setValue("You must login to use this feature.")
 	};// @lock
 
 	buttonForecast.click = function buttonForecast_click (event)// @startlock
 	{// @endlock
 		if (waf.directory.currentUser()== null) {
 			$$(getHtmlId("dialogWarning")).displayDialog()
-			$$('componentMain_richText4').setValue("You must login first")
+			$$('componentMain_richText4').setValue("You must login first. Use 'tester@email.com' and 'password' as credentials")
 			return;
 		}
 

@@ -29,8 +29,8 @@
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 58,
-						"Y" : 26
+						"X" : 102,
+						"Y" : 257
 					}
 				}
 			},
@@ -43,8 +43,8 @@
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 55,
-						"Y" : 100
+						"X" : 62,
+						"Y" : 42
 					}
 				}
 			},
@@ -85,7 +85,8 @@
 				},
 				"Event" : 
 				{
-					"method" : "Event/Event-methods.js"
+					"method" : "Event/Event-methods.js",
+					"events" : "Event/Event-events.js"
 				},
 				"Result" : 
 				{
@@ -147,6 +148,14 @@
 					"scope" : "public",
 					"type" : "date",
 					"simpleDate" : false
+				}
+			],
+			"events" : 
+			[
+				{
+					"kind" : "validateremove",
+					"from" : "$mainModel.Event.events.validateremove",
+					"userDefined" : true
 				}
 			],
 			"methods" : 
