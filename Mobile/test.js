@@ -72,27 +72,35 @@ function distinctEvents() {
 //a.query("me='tester3'")
 
 
-//ds.Result.length;
+//a=ds.Result.all()
+//a.event.ID
+//ds.User.all();
 //ds.Result.query("probability > 0")
 //ds.Result.query("probability>0").probability;
 
-//a=ds.Result.query("batch=:1", "E30A2E5CCE7B354BAB94C8EEDE3BF568")
-//b.find(
 
-//var a = {};
-//var b={}
-//a.name="able"
-//a.cost=10;
-//b.name="baker"
-//b.cost=5
-//var c=[]
-//c.push(a)
-//c.push(b)
-//c.name == "able"
  
 //ds.User.all();
+//ds.MyResult.length;
+//ds.MyResult.all().displayDate
+
+//"147AE3C803A79C4F8BE2E79CFD6C71B2"
 //a= ds.Event.query("outcomes.ID !==null")
 //a.remove()
-countAllTables()
+var result=ds.MyResult.createEntityCollection();
+var a=ds.MyResult.query("user.ID=:1", "147AE3C803A79C4F8BE2E79CFD6C71B2")//.distinctValues("batch");
+
+//ds.MyResult.all().event.eventName
+var b= a.distinctValues("batch");
+
+for (var i=0; i<b.length; i++) {
+result.add(a.find("batch=:1", b[i])	)
+}
+
+result.orderBy("timeS")
+//a.compute
+
+//var d = Date(1427266909810);
+//d
 
 //ds.Result.all().remove()

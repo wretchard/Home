@@ -235,9 +235,9 @@
 
 #{id}label6 {
 	z-index: 2;
-	width: 98px;
-	height: 21px;
-	top: 3px;
+	width: 106px;
+	height: 20px;
+	top: 4px;
 	left: 2px;
 	position: absolute;
 	color: rgb(0, 51, 102);
@@ -247,8 +247,8 @@
 #{id}label5 {
 	z-index: 7;
 	width: 75px;
-	height: 16px;
-	top: 242px;
+	height: 13px;
+	top: 245px;
 	left: 18px;
 	position: absolute;
 	min-width: 75px;
@@ -258,8 +258,8 @@
 
 #{id}richText5 {
 	z-index: 7;
-	width: 98px;
-	height: 16px;
+	width: 110px;
+	height: 13px;
 	top: 263px;
 	left: 18px;
 	position: absolute;
@@ -268,8 +268,8 @@
 #{id}label4 {
 	z-index: 6;
 	width: 75px;
-	height: 16px;
-	top: 204px;
+	height: 13px;
+	top: 207px;
 	left: 19px;
 	position: absolute;
 	min-width: 75px;
@@ -279,8 +279,8 @@
 
 #{id}richText4 {
 	z-index: 6;
-	width: 93px;
-	height: 16px;
+	width: 103px;
+	height: 13px;
 	top: 225px;
 	left: 19px;
 	position: absolute;
@@ -289,8 +289,8 @@
 #{id}label3 {
 	z-index: 5;
 	width: 95px;
-	height: 16px;
-	top: 81px;
+	height: 13px;
+	top: 84px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -300,8 +300,8 @@
 
 #{id}richText3 {
 	z-index: 5;
-	width: 120px;
-	height: 16px;
+	width: 132px;
+	height: 13px;
 	top: 102px;
 	left: 15px;
 	position: absolute;
@@ -310,8 +310,8 @@
 #{id}label2 {
 	z-index: 4;
 	width: 75px;
-	height: 16px;
-	top: 42px;
+	height: 13px;
+	top: 45px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -321,8 +321,8 @@
 
 #{id}richText2 {
 	z-index: 4;
-	width: 91px;
-	height: 16px;
+	width: 103px;
+	height: 13px;
 	top: 63px;
 	left: 15px;
 	position: absolute;
@@ -331,8 +331,8 @@
 #{id}label1 {
 	z-index: 2;
 	width: 75px;
-	height: 16px;
-	top: 7px;
+	height: 13px;
+	top: 10px;
 	left: 15px;
 	position: absolute;
 	min-width: 75px;
@@ -342,8 +342,8 @@
 
 #{id}richText1 {
 	z-index: 2;
-	width: 50px;
-	height: 16px;
+	width: 53px;
+	height: 13px;
 	top: 28px;
 	left: 15px;
 	position: absolute;
@@ -384,7 +384,7 @@
 	z-index: 6;
 	width: 260px;
 	height: 16px;
-	top: 8px;
+	top: 321px;
 	left: 5px;
 	position: absolute;
 	background-color: transparent;
