@@ -42,7 +42,7 @@ function distinctEvents() {
 
 //ds.Outcome.query("event.ID=1")
 //ds.User.remove();
-//addOneUser("test@email.com", "password", "Admin", "test")
+addOneUser("customer@email.com", "password", "Worker", "customer")
 //addOneUser("tester3@email.com", "password", "Admin", "tester3")
 //ds.Result.outcome= ds.Outcome.find("ID=1")
 //ds.Result.outcome.save();
@@ -52,7 +52,7 @@ function distinctEvents() {
 //ds.User.all()
 //currentSession()
 
-//ds.User.all()
+ds.User.all()
 //ds.Outcome(1).event.eventName
 
 //ds.Outcome.all()
@@ -87,17 +87,17 @@ function distinctEvents() {
 //"147AE3C803A79C4F8BE2E79CFD6C71B2"
 //a= ds.Event.query("outcomes.ID !==null")
 //a.remove()
-var result=ds.MyResult.createEntityCollection();
-var a=ds.MyResult.query("user.ID=:1", "147AE3C803A79C4F8BE2E79CFD6C71B2")//.distinctValues("batch");
+//var result=ds.MyResult.createEntityCollection();
+//var a=ds.MyResult.query("user.ID=:1", "147AE3C803A79C4F8BE2E79CFD6C71B2")//.distinctValues("batch");
 
-//ds.MyResult.all().event.eventName
-var b= a.distinctValues("batch");
+////ds.MyResult.all().event.eventName
+//var b= a.distinctValues("batch");
 
-for (var i=0; i<b.length; i++) {
-result.add(a.find("batch=:1", b[i])	)
-}
+//for (var i=0; i<b.length; i++) {
+//result.add(a.find("batch=:1", b[i])	)
+//}
 
-result.orderBy("timeS")
+//result.orderBy("timeS")
 //a.compute
 
 //var d = Date(1427266909810);

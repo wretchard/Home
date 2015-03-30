@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><directory>
+	<user ID="389F0E0F4D1913468CA1984284CE1970" name="Admin" fullName="Admin" password="5af2f73d2694e61bc2a56c117df8c688"/>
 	<group ID="01000000000000000000000000000000" name="Admin">
-		<include user="Data" ID="5008AE4A39E6034FBE84F0D99BE8420C"/>
-		<include user="Admin" ID="B530A0032802F54B9FC1312EAE362802"/>
-		<include group="Internal" groupID="E6FFA7BF2EDFAB4CBE4D169556ACA2FA"/>
+		<include group="Internal" groupID="7E7A8006AF5CB34FAC5A913B443C1F6C"/>
+		<include user="Admin" ID="389F0E0F4D1913468CA1984284CE1970"/>
 	</group>
-	<group ID="D8E9CDAA7B6C734D97B3BE49730749FE" name="Worker">
-		<include group="Manager" groupID="DF83315B081CB043856B400CD3999C2A"/>
-	</group>
-	<group ID="DF83315B081CB043856B400CD3999C2A" name="Manager">
+	<group ID="7E7A8006AF5CB34FAC5A913B443C1F6C" name="Internal"/>
+	<group ID="5B253C453C63364A9AA72003F4D4C8FC" name="Manager">
 		<include group="Admin" groupID="01000000000000000000000000000000"/>
 	</group>
-	<group ID="E6FFA7BF2EDFAB4CBE4D169556ACA2FA" name="Internal"/>
-	<user ID="5008AE4A39E6034FBE84F0D99BE8420C" name="Data" fullName="Manager" password="46a6abdd8446cd26b64c4d0050cae69e"/>
-	<user ID="B530A0032802F54B9FC1312EAE362802" name="Admin" fullName="Administrator" password="5af2f73d2694e61bc2a56c117df8c688"/>
+	<group ID="02C4E6E945FCAB488B900AD437775DFB" name="Worker">
+		<include group="Manager" groupID="5B253C453C63364A9AA72003F4D4C8FC"/>
+	</group>
 </directory>
