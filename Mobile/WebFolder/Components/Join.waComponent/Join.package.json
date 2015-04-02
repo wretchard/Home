@@ -1,0 +1,43 @@
+{
+	"name": "Mobile/Components/Join.waComponent",
+	"version": "1.0.0",
+	"webComponent": "Components/Join.waComponent/Join.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/container",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/textField",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/button",
+			"type": "widget"
+		},
+		{
+			"id": "Components/Join.waComponent/Join.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "Components/Join.waComponent/Join.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/Join.waComponent/styles/Join.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/Join.waComponent/Join.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}

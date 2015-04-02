@@ -1,0 +1,10 @@
+{
+	"name": "Join",
+	"html": "Join.html",
+	"scripts": [
+		"Join.js"
+	],
+	"styles": [
+		"Join.css"
+	]
+}

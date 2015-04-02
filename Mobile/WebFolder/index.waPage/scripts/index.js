@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuJoin = {};	// @menuItem
 	var documentEvent = {};	// @document
 	var menuMyForecasts = {};	// @menuItem
 	var loginMain = {};	// @login
@@ -10,6 +11,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	menuJoin.click = function menuJoin_click (event)// @startlock
+	{// @endlock
+		$$('componentMain').loadComponent('/Components/Join.waComponent');
+	};// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
@@ -79,6 +85,7 @@ var oldValue // the former value of the filled value
 
 
 // @region eventManager// @startlock
+	WAF.addListener("menuJoin", "click", menuJoin.click, "WAF");
 	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
 	WAF.addListener("loginMain", "login", loginMain.login, "WAF");
 	WAF.addListener("menuMyForecasts", "click", menuMyForecasts.click, "WAF");
