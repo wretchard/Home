@@ -7,7 +7,7 @@
 	z-index: 9;
 	width: 150px;
 	height: 13px;
-	top: 140px;
+	top: 147px;
 	left: 5px;
 	position: absolute;
 	color: rgb(0, 51, 102);
@@ -20,7 +20,7 @@
 	width: 150px;
 	height: 21px;
 	top: 1px;
-	left: 0px;
+	left: 5px;
 	position: absolute;
 	min-width: 150px;
 	font-size: 18px;
@@ -30,8 +30,8 @@
 #{id}label3 {
 	z-index: 5;
 	width: 100px;
-	height: 13px;
-	top: 94px;
+	height: 16px;
+	top: 98px;
 	left: 5px;
 	position: absolute;
 	color: rgb(0, 51, 102);
@@ -42,8 +42,8 @@
 #{id}label2 {
 	z-index: 4;
 	width: 75px;
-	height: 13px;
-	top: 48px;
+	height: 16px;
+	top: 52px;
 	left: 5px;
 	position: absolute;
 	min-width: 75px;
@@ -54,8 +54,8 @@
 #{id}label1 {
 	z-index: 6;
 	width: 75px;
-	height: 13px;
-	top: 2px;
+	height: 16px;
+	top: 6px;
 	left: 5px;
 	position: absolute;
 	min-width: 75px;
@@ -72,7 +72,7 @@
 	width: 365px;
 	height: 237px;
 	top: 27px;
-	left: 0px;
+	left: 5px;
 	position: absolute;
 }
 
@@ -89,7 +89,7 @@
 	z-index: 6;
 	width: 350px;
 	height: 22px;
-	top: 20px;
+	top: 27px;
 	left: 5px;
 	position: absolute;
 }
@@ -98,7 +98,7 @@
 	z-index: 4;
 	width: 350px;
 	height: 22px;
-	top: 66px;
+	top: 73px;
 	left: 5px;
 	position: absolute;
 }
@@ -107,7 +107,7 @@
 	z-index: 5;
 	width: 350px;
 	height: 22px;
-	top: 112px;
+	top: 119px;
 	left: 5px;
 	position: absolute;
 }
@@ -116,7 +116,7 @@
 	z-index: 9;
 	width: 350px;
 	height: 22px;
-	top: 158px;
+	top: 165px;
 	left: 5px;
 	position: absolute;
 	color: rgb(0, 0, 0);

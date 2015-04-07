@@ -35,14 +35,28 @@ function countAllTables() {
 };
 
 
-function distinctEvents() {
+function testEmail(em) {
+	
+	//\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b
+		if (em !== null) {
+			//passwordRegexStr = /^(?=.*\d)[a-zA-Z\d]{7,}$/;
+			passwordRegexStr = /^[\w\.=-]+@[\w\.-]+\.[\w]{2,3}$/
+			isValid = passwordRegexStr.test(em);
+			if (!isValid) {
+				return "invalid"
+//				$$('componentMain_richTextError').setValue
+//				return {error: 8025, errorMessage: "Password must be at least 7 characters."};
+			} else {
+				return "valid"	
+			}
+		}
 		
 }
 //loginByPassword("Data", "a")
 
 //ds.Outcome.query("event.ID=1")
 //ds.User.remove();
-addOneUser("customer@email.com", "password", "Worker", "customer")
+//addOneUser("customer@email.com", "password", "Worker", "customer")
 //addOneUser("tester3@email.com", "password", "Admin", "tester3")
 //ds.Result.outcome= ds.Outcome.find("ID=1")
 //ds.Result.outcome.save();
@@ -52,7 +66,7 @@ addOneUser("customer@email.com", "password", "Worker", "customer")
 //ds.User.all()
 //currentSession()
 
-ds.User.all()
+//ds.User.all()
 //ds.Outcome(1).event.eventName
 
 //ds.Outcome.all()
@@ -104,3 +118,5 @@ ds.User.all()
 //d
 
 //ds.Result.all().remove()
+
+testEmail("wretchardthecat@hotmail.com")
