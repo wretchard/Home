@@ -68,7 +68,7 @@ function constructor (id) {
 		} else {
 			$$('componentMain_richTextError').setValue("")}
 		
-		
+		$$('componentMain').sources.user.addUser($$('componentMain').sources.objJoin);
 	};// @lock
 
 	textConfirm.change = function textConfirm_change (event)// @startlock
