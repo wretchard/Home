@@ -18,8 +18,8 @@
 #{id}label4 {
 	z-index: 4;
 	width: 150px;
-	height: 21px;
-	top: 1px;
+	height: 20px;
+	top: 2px;
 	left: 5px;
 	position: absolute;
 	min-width: 150px;
@@ -30,8 +30,8 @@
 #{id}label3 {
 	z-index: 5;
 	width: 100px;
-	height: 16px;
-	top: 98px;
+	height: 13px;
+	top: 101px;
 	left: 5px;
 	position: absolute;
 	color: rgb(0, 51, 102);
@@ -42,8 +42,8 @@
 #{id}label2 {
 	z-index: 4;
 	width: 75px;
-	height: 16px;
-	top: 52px;
+	height: 13px;
+	top: 55px;
 	left: 5px;
 	position: absolute;
 	min-width: 75px;
@@ -54,8 +54,8 @@
 #{id}label1 {
 	z-index: 6;
 	width: 75px;
-	height: 16px;
-	top: 6px;
+	height: 13px;
+	top: 9px;
 	left: 5px;
 	position: absolute;
 	min-width: 75px;

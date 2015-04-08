@@ -23,7 +23,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			$$('menuAdmin').show()
 		} else {
 			$$('menuAdmin').hide()
-		}// Add your code here
+		}
+		
+		if(waf.directory.currentUser() == null) {
+			$$('menuJoin').show()
+		} else {
+			$$('menuJoin').hide()
+		}
+		
+		
 	};// @lock
 
 	menuMyForecasts.click = function menuMyForecasts_click (event)// @startlock

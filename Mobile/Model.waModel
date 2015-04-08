@@ -1,460 +1,522 @@
+
 {
-	"toJSON": true,
-	"extraProperties": {
-		"version": "2",
-		"classes": {
-			"User": {
-				"panelColor": "#7F7F7F",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 22,
-						"Y": 16
+	"toJSON" : true,
+	"extraProperties" : 
+	{
+		"version" : "2",
+		"classes" : 
+		{
+			"User" : 
+			{
+				"panelColor" : "#7F7F7F",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 22,
+						"Y" : 16
 					}
 				}
 			},
-			"Event": {
-				"panelColor": "#D8D8D8",
-				"panel": {
-					"isOpen": "false",
-					"pathVisible": true,
-					"position": {
-						"X": 10,
-						"Y": 26
+			"Event" : 
+			{
+				"panelColor" : "#D8D8D8",
+				"panel" : 
+				{
+					"isOpen" : "false",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 10,
+						"Y" : 26
 					}
 				}
 			},
-			"Outcome": {
-				"panelColor": "#E5B9B7",
-				"panel": {
-					"isOpen": "false",
-					"pathVisible": true,
-					"position": {
-						"X": 62,
-						"Y": 42
+			"Outcome" : 
+			{
+				"panelColor" : "#E5B9B7",
+				"panel" : 
+				{
+					"isOpen" : "false",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 62,
+						"Y" : 42
 					}
 				}
 			},
-			"Result": {
-				"panelColor": "#C4BD97",
-				"panel": {
-					"isOpen": "false",
-					"pathVisible": true,
-					"position": {
-						"X": 14,
-						"Y": 6
+			"Result" : 
+			{
+				"panelColor" : "#C4BD97",
+				"panel" : 
+				{
+					"isOpen" : "false",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 14,
+						"Y" : 6
 					}
 				},
-				"attributes": {
-					"timeS": {
-						"note": "time in milliseconds from Jan 1 1970"
+				"attributes" : 
+				{
+					"timeS" : 
+					{
+						"note" : "time in milliseconds from Jan 1 1970"
 					}
 				}
 			},
-			"MyResult": {
-				"panelColor": "#4FA997",
-				"panel": {
-					"isOpen": "false",
-					"pathVisible": true,
-					"position": {
-						"X": 44,
-						"Y": 20
+			"MyResult" : 
+			{
+				"panelColor" : "#4FA997",
+				"panel" : 
+				{
+					"isOpen" : "false",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 44,
+						"Y" : 20
 					}
 				}
 			}
 		},
-		"model": {
-			"scriptMode": "manual",
-			"workspaceLeft": 0,
-			"workspaceTop": 0,
-			"lastScriptLocation": {
-				"User": {
-					"method": "User/User-methods.js",
-					"computed": "User/User-events.js",
-					"events": "User/User-events.js"
+		"model" : 
+		{
+			"scriptMode" : "manual",
+			"workspaceLeft" : 0,
+			"workspaceTop" : 0,
+			"lastScriptLocation" : 
+			{
+				"User" : 
+				{
+					"method" : "User/User-methods.js",
+					"computed" : "User/User-events.js",
+					"events" : "User/User-events.js"
 				},
-				"Event": {
-					"method": "Event/Event-methods.js",
-					"events": "Event/Event-events.js"
+				"Event" : 
+				{
+					"method" : "Event/Event-methods.js",
+					"events" : "Event/Event-events.js"
 				},
-				"Result": {
-					"events": "Result/Result-events.js",
-					"method": "Result/Result-methods.js"
+				"Result" : 
+				{
+					"events" : "Result/Result-events.js",
+					"method" : "Result/Result-methods.js"
 				},
-				"MyResult": {
-					"events": "MyResult/MyResult-events.js",
-					"computed": "MyResult/MyResult-events.js"
+				"MyResult" : 
+				{
+					"events" : "MyResult/MyResult-events.js",
+					"computed" : "MyResult/MyResult-events.js"
 				}
 			}
 		}
 	},
-	"dataClasses": [
+	"dataClasses" : 
+	[
 		{
-			"name": "Event",
-			"className": "Event",
-			"collectionName": "Events",
-			"scope": "public",
-			"attributes": [
+			"name" : "Event",
+			"className" : "Event",
+			"collectionName" : "Events",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "eventName",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "eventName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "eventDescription",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "eventDescription",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "outcomes",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "Outcomes",
-					"reversePath": true,
-					"path": "event"
+					"name" : "outcomes",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "Outcomes",
+					"reversePath" : true,
+					"path" : "event"
 				},
 				{
-					"name": "closingDate",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false
+					"name" : "closingDate",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false
 				},
 				{
-					"name": "openingDate",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false
+					"name" : "openingDate",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false
 				}
 			],
-			"events": [
+			"events" : 
+			[
 				{
-					"kind": "validateremove",
-					"from": "$mainModel.Event.events.validateremove",
-					"userDefined": true
+					"kind" : "validateremove",
+					"from" : "$mainModel.Event.events.validateremove",
+					"userDefined" : true
 				}
 			],
-			"methods": [
+			"methods" : 
+			[
 				{
-					"name": "createResult",
-					"applyTo": "entity",
-					"scope": "public",
-					"from": "$mainModel.Event.entityMethods.createResult",
-					"userDefined": true
+					"name" : "createResult",
+					"applyTo" : "entity",
+					"scope" : "public",
+					"from" : "$mainModel.Event.entityMethods.createResult",
+					"userDefined" : true
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "Outcome",
-			"className": "Outcome",
-			"collectionName": "Outcomes",
-			"scope": "public",
-			"attributes": [
+			"name" : "Outcome",
+			"className" : "Outcome",
+			"collectionName" : "Outcomes",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree"
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "event",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Event",
-					"path": "Event"
+					"name" : "event",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Event",
+					"path" : "Event"
 				},
 				{
-					"name": "outComeName",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "outComeName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "outComeDescription",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "outComeDescription",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "results",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "Results",
-					"reversePath": true,
-					"path": "outcome"
+					"name" : "results",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "Results",
+					"reversePath" : true,
+					"path" : "outcome"
 				},
 				{
-					"name": "occurred",
-					"kind": "storage",
-					"matchColumn": "Occurred",
-					"scope": "public",
-					"type": "bool"
+					"name" : "occurred",
+					"kind" : "storage",
+					"matchColumn" : "Occurred",
+					"scope" : "public",
+					"type" : "bool"
 				}
 			],
-			"events": [
+			"events" : 
+			[
 				{
-					"kind": "validate",
-					"from": "$mainModel.Outcome.events.validate",
-					"userDefined": true
+					"kind" : "validate",
+					"from" : "$mainModel.Outcome.events.validate",
+					"userDefined" : true
 				}
 			],
-			"key": [
+			"key" : 
+			[
 				{
-					"name": "ID"
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "Result",
-			"className": "Result",
-			"collectionName": "Results",
-			"scope": "public",
-			"attributes": [
+			"name" : "Result",
+			"className" : "Result",
+			"collectionName" : "Results",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree"
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "probability",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number"
+					"name" : "probability",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
 				},
 				{
-					"name": "user",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "User",
-					"path": "User"
+					"name" : "user",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "User",
+					"path" : "User"
 				},
 				{
-					"name": "outcome",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Outcome",
-					"path": "Outcome"
+					"name" : "outcome",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Outcome",
+					"path" : "Outcome"
 				},
 				{
-					"name": "outName",
-					"kind": "alias",
-					"scope": "public",
-					"type": "string",
-					"path": "outcome.outComeName"
+					"name" : "outName",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "outcome.outComeName"
 				},
 				{
-					"name": "outDesc",
-					"kind": "alias",
-					"scope": "public",
-					"type": "string",
-					"path": "outcome.outComeDescription"
+					"name" : "outDesc",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "outcome.outComeDescription"
 				},
 				{
-					"name": "me",
-					"kind": "alias",
-					"scope": "public",
-					"type": "string",
-					"path": "user.fullName"
+					"name" : "me",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "user.fullName"
 				},
 				{
-					"name": "event",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Event",
-					"path": "outcome.event"
+					"name" : "event",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Event",
+					"path" : "outcome.event"
 				},
 				{
-					"name": "timeS",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number",
-					"defaultValue": "0"
+					"name" : "timeS",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number",
+					"defaultValue" : "0"
 				},
 				{
-					"name": "batch",
-					"kind": "storage",
-					"scope": "public",
-					"type": "uuid",
-					"indexKind": "auto"
+					"name" : "batch",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"type" : "uuid",
+					"indexKind" : "auto"
 				},
 				{
-					"name": "eventName",
-					"kind": "alias",
-					"scope": "public",
-					"type": "string",
-					"path": "outcome.event.eventName"
+					"name" : "eventName",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "outcome.event.eventName"
 				}
 			],
-			"methods": [
+			"methods" : 
+			[
 				{
-					"name": "loadValues",
-					"applyTo": "dataClass",
-					"scope": "public",
-					"from": "$mainModel.Result.methods.loadValues",
-					"userDefined": true
+					"name" : "loadValues",
+					"applyTo" : "dataClass",
+					"scope" : "public",
+					"from" : "$mainModel.Result.methods.loadValues",
+					"userDefined" : true
 				},
 				{
-					"name": "removeUnused",
-					"applyTo": "entityCollection",
-					"scope": "public",
-					"from": "$mainModel.Result.collectionMethods.removeUnused",
-					"userDefined": true
+					"name" : "removeUnused",
+					"applyTo" : "entityCollection",
+					"scope" : "public",
+					"from" : "$mainModel.Result.collectionMethods.removeUnused",
+					"userDefined" : true
 				}
 			],
-			"key": [
+			"key" : 
+			[
 				{
-					"name": "ID"
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "MyResult",
-			"className": "MyResult",
-			"collectionName": "MyResultCollection",
-			"scope": "public",
-			"extends": "Result",
-			"attributes": [
+			"name" : "MyResult",
+			"className" : "MyResult",
+			"collectionName" : "MyResultCollection",
+			"scope" : "public",
+			"extends" : "Result",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "removed"
+					"name" : "ID",
+					"kind" : "removed"
 				},
 				{
-					"name": "displayDate",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "string",
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "displayDate",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "$mainModel.MyResult.displayDate.onGet",
-							"userDefined": true
+							"from" : "$mainModel.MyResult.displayDate.onGet",
+							"userDefined" : true
 						}
 					]
 				}
 			],
-			"events": [
+			"events" : 
+			[
 				{
-					"kind": "restrict",
-					"from": "$mainModel.MyResult.events.restrict",
-					"userDefined": true
+					"kind" : "restrict",
+					"from" : "$mainModel.MyResult.events.restrict",
+					"userDefined" : true
 				}
 			]
 		},
 		{
-			"name": "User",
-			"className": "User",
-			"collectionName": "Users",
-			"scope": "public",
-			"attributes": [
+			"name" : "User",
+			"className" : "User",
+			"collectionName" : "Users",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"autogenerate": true,
-					"type": "uuid",
-					"indexKind": "btree",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"autogenerate" : true,
+					"type" : "uuid",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "email",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"type": "string",
-					"indexKind": "btree"
+					"name" : "email",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"type" : "string",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "password",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "string",
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "password",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "$mainModel.User.password.onGet",
-							"userDefined": true
+							"from" : "$mainModel.User.password.onGet",
+							"userDefined" : true
 						}
 					],
-					"onSet": [
+					"onSet" : 
+					[
 						{
-							"from": "$mainModel.User.password.onSet",
-							"userDefined": true
+							"from" : "$mainModel.User.password.onSet",
+							"userDefined" : true
 						}
 					]
 				},
 				{
-					"name": "HA1Key",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "HA1Key",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "role",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string",
-					"indexKind": "btree"
+					"name" : "role",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"type" : "string",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "fullName",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string",
-					"indexKind": "btree"
+					"name" : "fullName",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"type" : "string",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "results",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "Results",
-					"reversePath": true,
-					"path": "user"
+					"name" : "results",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "Results",
+					"reversePath" : true,
+					"path" : "user"
 				}
 			],
-			"events": [
+			"events" : 
+			[
 				{
-					"kind": "validate",
-					"from": "$mainModel.User.events.validate",
-					"userDefined": true
+					"kind" : "validate",
+					"from" : "$mainModel.User.events.validate",
+					"userDefined" : true
 				}
 			],
-			"methods": [
+			"methods" : 
+			[
 				{
-					"name": "addUser",
-					"applyTo": "dataClass",
-					"scope": "public",
-					"from": "$mainModel.User.methods.addUser",
-					"userDefined": true
+					"name" : "addUser",
+					"applyTo" : "dataClass",
+					"scope" : "public",
+					"from" : "$mainModel.User.methods.addUser",
+					"userDefined" : true
 				},
 				{
-					"name": "validatePassword",
-					"applyTo": "entity",
-					"scope": "publicOnServer",
-					"from": "$mainModel.User.entityMethods.validatePassword",
-					"userDefined": true
+					"name" : "validatePassword",
+					"applyTo" : "entity",
+					"scope" : "publicOnServer",
+					"from" : "$mainModel.User.entityMethods.validatePassword",
+					"userDefined" : true
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
 				}
 			]
 		}

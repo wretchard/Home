@@ -67,14 +67,24 @@ function constructor (id) {
 			return;
 		} else {
 			$$('componentMain_richTextError').setValue("")}
-		
-		$$('componentMain').sources.user.addUser($$('componentMain').sources.objJoin);
+		var regObj={};
+		regObj.name=$$('componentMain').sources.objJoin.name;
+		regObj.email=$$('componentMain').sources.objJoin.email;
+		regObj.password=$$('componentMain').sources.objJoin.password;
+		regObj.verifyPassword = $$('componentMain').sources.objJoin.verifyPassword
+		$$('componentMain').sources.user.addUser(regObj, 
+		{onSuccess: function(event) {
+			$$('componentMain_richTextError').setValue(event.result.errorMessage)
+			}
+		}
+		);
 	};// @lock
 
 	textConfirm.change = function textConfirm_change (event)// @startlock
 	{// @endlock
 		var passWord = $$('componentMain').sources.objJoin.password
-		if(this.getValue() !== passWord) {
+		var vPassword = this.getValue();
+		if(passWord !== vPassword) {
 			$$('componentMain_buttonJoin').disable()
 			$$('componentMain_richTextError').setValue("Does not match password")
 		} else {
