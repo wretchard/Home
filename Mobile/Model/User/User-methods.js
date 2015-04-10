@@ -29,6 +29,7 @@ model.User.methods.addUser = function(signUpData) {
        	newUser.fullName = signUpData.name;  
        	newUser.email = signUpData.email;    
        	newUser.password = signUpData.password;
+       	newUser.role = "Worker";
        	
        	//*** Best Pratice ***
        	//Save the new User in a Try Catch block and put your validation code for the email address in the User 

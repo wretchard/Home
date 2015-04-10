@@ -75,6 +75,7 @@ function constructor (id) {
 		$$('componentMain').sources.user.addUser(regObj, 
 		{onSuccess: function(event) {
 			$$('componentMain_richTextError').setValue(event.result.errorMessage)
+			$$('menuJoin').hide()
 			}
 		}
 		);

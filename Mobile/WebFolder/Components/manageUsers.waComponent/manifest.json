@@ -1,0 +1,10 @@
+{
+	"name": "manageUsers",
+	"html": "manageUsers.html",
+	"scripts": [
+		"manageUsers.js"
+	],
+	"styles": [
+		"manageUsers.css"
+	]
+}

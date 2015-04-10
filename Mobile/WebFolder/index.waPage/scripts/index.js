@@ -2,15 +2,30 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuManageUsers = {};	// @menuItem
+	var menuAddEvent = {};	// @menuItem
 	var menuJoin = {};	// @menuItem
 	var documentEvent = {};	// @document
 	var menuMyForecasts = {};	// @menuItem
 	var loginMain = {};	// @login
-	var menuAdmin = {};	// @menuItem
 	var menuHome = {};	// @menuItem
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	menuManageUsers.click = function menuManageUsers_click (event)// @startlock
+	{// @endlock
+		if(waf.directory.currentUserBelongsTo("manager")) {
+			$$('componentMain').loadComponent('/Components/manageUsers.waComponent');
+		};
+	};// @lock
+
+	menuAddEvent.click = function menuAddEvent_click (event)// @startlock
+	{// @endlock
+		if(waf.directory.currentUserBelongsTo("manager")) {
+			$$('componentMain').loadComponent('/Components/Admin.waComponent');
+		};
+	};// @lock
 
 	menuJoin.click = function menuJoin_click (event)// @startlock
 	{// @endlock
@@ -53,20 +68,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		if(waf.directory.currentUserBelongsTo("manager")) {
 			$$('menuAdmin').show()
 		};
+		
+		$$('menuJoin').hide()
 	};// @lock
 
 	loginMain.logout = function loginMain_logout (event)// @startlock
 	{// @endlock
 		$$('componentMain').loadComponent('/Components/Home.waComponent');
-		$$('menuAdmin').hide()
-		
-	};// @lock
-
-	menuAdmin.click = function menuAdmin_click (event)// @startlock
-	{// @endlock
-		if(waf.directory.currentUserBelongsTo("manager")) {
-			$$('componentMain').loadComponent('/Components/Admin.waComponent');
-		};
+		$$('menuAdmin').hide();
+		$$('menuJoin').show();
 		
 	};// @lock
 
@@ -93,12 +103,13 @@ var oldValue // the former value of the filled value
 
 
 // @region eventManager// @startlock
+	WAF.addListener("menuManageUsers", "click", menuManageUsers.click, "WAF");
+	WAF.addListener("menuAddEvent", "click", menuAddEvent.click, "WAF");
 	WAF.addListener("menuJoin", "click", menuJoin.click, "WAF");
 	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
 	WAF.addListener("loginMain", "login", loginMain.login, "WAF");
 	WAF.addListener("menuMyForecasts", "click", menuMyForecasts.click, "WAF");
 	WAF.addListener("loginMain", "logout", loginMain.logout, "WAF");
-	WAF.addListener("menuAdmin", "click", menuAdmin.click, "WAF");
 	WAF.addListener("menuHome", "click", menuHome.click, "WAF");
 // @endregion
 };// @endlock

@@ -1,0 +1,35 @@
+{
+	"name": "Mobile/Components/manageUsers.waComponent",
+	"version": "1.0.0",
+	"webComponent": "Components/manageUsers.waComponent/manageUsers.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Components/manageUsers.waComponent/manageUsers.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "Components/manageUsers.waComponent/manageUsers.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/manageUsers.waComponent/styles/manageUsers.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/manageUsers.waComponent/manageUsers.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}
