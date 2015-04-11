@@ -1,0 +1,35 @@
+{
+	"name": "Mobile/Components/eXport.waComponent",
+	"version": "1.0.0",
+	"webComponent": "Components/eXport.waComponent/eXport.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/frame",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Components/eXport.waComponent/eXport.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "Components/eXport.waComponent/eXport.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/eXport.waComponent/styles/eXport.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "Components/eXport.waComponent/eXport.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}

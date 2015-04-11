@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuExport = {};	// @menuItem
 	var menuManageUsers = {};	// @menuItem
 	var menuAddEvent = {};	// @menuItem
 	var menuJoin = {};	// @menuItem
@@ -12,6 +13,14 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	menuExport.click = function menuExport_click (event)// @startlock
+	{// @endlock
+//		window.location.href='/walib/dataBrowser/index.html'
+		if(waf.directory.currentUserBelongsTo("manager")) {
+			$$('componentMain').loadComponent('/Components/eXport.waComponent');
+		};
+	};// @lock
 
 	menuManageUsers.click = function menuManageUsers_click (event)// @startlock
 	{// @endlock
@@ -36,8 +45,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		if(waf.directory.currentUserBelongsTo("manager")) {
 			$$('menuAdmin').show()
+			$$('menuExport').show()
 		} else {
 			$$('menuAdmin').hide()
+			$$('menuExport').hide()
 		}
 		
 		if(waf.directory.currentUser() == null) {
@@ -67,6 +78,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		if(waf.directory.currentUserBelongsTo("manager")) {
 			$$('menuAdmin').show()
+			$$('menuExport').show()
 		};
 		
 		$$('menuJoin').hide()
@@ -76,6 +88,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		$$('componentMain').loadComponent('/Components/Home.waComponent');
 		$$('menuAdmin').hide();
+		$$('menuExport').hide()
 		$$('menuJoin').show();
 		
 	};// @lock
@@ -103,6 +116,7 @@ var oldValue // the former value of the filled value
 
 
 // @region eventManager// @startlock
+	WAF.addListener("menuExport", "click", menuExport.click, "WAF");
 	WAF.addListener("menuManageUsers", "click", menuManageUsers.click, "WAF");
 	WAF.addListener("menuAddEvent", "click", menuAddEvent.click, "WAF");
 	WAF.addListener("menuJoin", "click", menuJoin.click, "WAF");
