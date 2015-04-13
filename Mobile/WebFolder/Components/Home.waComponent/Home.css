@@ -191,7 +191,7 @@
 	width: 489px;
 	height: 550px;
 	top: 30px;
-	left: 576px;
+	left: 602px;
 	position: absolute;
 	background-color: rgb(204, 204, 153);
 	border-top-style: solid;
@@ -315,7 +315,7 @@
 
 #{id}dataGridEvents {
 	z-index: 4;
-	width: 564px;
+	width: 573px;
 	height: 250px;
 	top: 30px;
 	left: 5px;

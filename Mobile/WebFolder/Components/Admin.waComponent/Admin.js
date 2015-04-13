@@ -16,6 +16,10 @@ function constructor (id) {
 		$$('componentMain_button7').disable()
 
 	// @region namespaceDeclaration// @startlock
+	var outcomesEvent = {};	// @dataSource
+	var button8 = {};	// @button
+	var button7 = {};	// @button
+	var button6 = {};	// @button
 	var checkbox1 = {};	// @checkbox
 	var textField6 = {};	// @textField
 	var textField5 = {};	// @textField
@@ -31,6 +35,38 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	outcomesEvent.onBeforeCurrentElementChange = function outcomesEvent_onBeforeCurrentElementChange (event)// @startlock
+	{// @endlock
+		if (this.ID == null) {
+			this.removeCurrent()	
+		}	
+	};// @lock
+
+	button8.click = function button8_click (event)// @startlock
+	{// @endlock
+		$$('componentMain_button6').enable()
+	};// @lock
+
+	button7.click = function button7_click (event)// @startlock
+	{// @endlock
+		if ($$('componentMain').sources.outcomes.outComeName == null 
+		|| $$('componentMain').sources.outcomes.outComeDescription== null 
+		)
+		{
+			$$('componentMain_richTextMessage').setValue("You must fill in an outcome name and description.")
+			return;
+		}
+		$$('componentMain').sources.outcomes.save();
+		$$('componentMain_button6').enable()
+		$$('componentMain_richTextMessage').setValue("Record saved")
+	};// @lock
+
+	button6.click = function button6_click (event)// @startlock
+	{// @endlock
+		this.disable();
+		$$('componentMain_button7').enable()
+	};// @lock
 
 	checkbox1.change = function checkbox1_change (event)// @startlock
 	{// @endlock
@@ -107,6 +143,10 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_outcomes", "onBeforeCurrentElementChange", outcomesEvent.onBeforeCurrentElementChange, "WAF");
+	WAF.addListener(this.id + "_button8", "click", button8.click, "WAF");
+	WAF.addListener(this.id + "_button7", "click", button7.click, "WAF");
+	WAF.addListener(this.id + "_button6", "click", button6.click, "WAF");
 	WAF.addListener(this.id + "_checkbox1", "change", checkbox1.change, "WAF");
 	WAF.addListener(this.id + "_textField6", "change", textField6.change, "WAF");
 	WAF.addListener(this.id + "_textField5", "change", textField5.change, "WAF");
