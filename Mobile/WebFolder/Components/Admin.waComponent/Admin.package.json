@@ -28,6 +28,10 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/richText",
+			"type": "widget"
+		},
+		{
 			"id": "Components/Admin.waComponent/Admin.html",
 			"path": "WEBFOLDER",
 			"type": "html"
