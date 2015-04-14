@@ -57,7 +57,7 @@ function testEmail(em) {
 //ds.Outcome.query("event.ID=1")
 //ds.User.remove();
 //addOneUser("customer@email.com", "password", "Worker", "customer")
-//addOneUser("tester3@email.com", "password", "Admin", "tester3")
+addOneUser("eugene@email.com", "zaporitsian3", "Admin", "Eugene")
 //ds.Result.outcome= ds.Outcome.find("ID=1")
 //ds.Result.outcome.save();
 
@@ -119,4 +119,4 @@ function testEmail(em) {
 
 //ds.Result.all().remove()
 
-testEmail("wretchardthecat@hotmail.com")
+//testEmail("wretchardthecat@hotmail.com")
