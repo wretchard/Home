@@ -16,6 +16,8 @@ function constructor (id) {
 		$$('componentMain_button7').disable()
 
 	// @region namespaceDeclaration// @startlock
+	var button12 = {};	// @button
+	var textField7 = {};	// @textField
 	var outcomesEvent = {};	// @dataSource
 	var button8 = {};	// @button
 	var button7 = {};	// @button
@@ -35,6 +37,26 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	button12.click = function button12_click (event)// @startlock
+	{// @endlock
+	
+		if ($$('componentMain').sources.event.eventName == null 
+		|| $$('componentMain').sources.event.eventDescription== null 
+		|| $$('componentMain').sources.event.openingDate== undefined)
+		{
+			$$('componentMain_richTextMessage').setValue("You must fill in an event name, description and opening date.")
+			return;
+		}
+		$$('componentMain').sources.event.save();
+		$$('componentMain_button1').enable()
+		$$('componentMain_richTextMessage').setValue("Record saved")
+	};// @lock
+
+	textField7.change = function textField7_change (event)// @startlock
+	{// @endlock
+		$$('componentMain_button2').enable()
+	};// @lock
 
 	outcomesEvent.onBeforeCurrentElementChange = function outcomesEvent_onBeforeCurrentElementChange (event)// @startlock
 	{// @endlock
@@ -143,6 +165,8 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button12", "click", button12.click, "WAF");
+	WAF.addListener(this.id + "_textField7", "change", textField7.change, "WAF");
 	WAF.addListener(this.id + "_outcomes", "onBeforeCurrentElementChange", outcomesEvent.onBeforeCurrentElementChange, "WAF");
 	WAF.addListener(this.id + "_button8", "click", button8.click, "WAF");
 	WAF.addListener(this.id + "_button7", "click", button7.click, "WAF");
