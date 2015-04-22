@@ -3,25 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}button12 {
-	width: 92px;
-	height: 40px;
-	top: 155px;
-	left: 6px;
-	position: absolute;
-	z-index: 15;
-}
-
 #{id}textField7 {
+	z-index: 14;
 	width: 130px;
 	height: 22px;
 	top: 133px;
 	left: 345px;
 	position: absolute;
-	z-index: 14;
 }
 
 #{id}label12 {
+	z-index: 13;
 	width: 100px;
 	height: 13px;
 	top: 115px;
@@ -30,7 +22,6 @@
 	min-width: 100px;
 	color: rgb(0, 51, 102);
 	font-weight: bold;
-	z-index: 13;
 }
 
 #{id}label11 {
@@ -58,7 +49,7 @@
 	width: 92px;
 	height: 22px;
 	top: 162px;
-	left: 300px;
+	left: 267px;
 	position: absolute;
 }
 
@@ -67,7 +58,7 @@
 	width: 92px;
 	height: 22px;
 	top: 162px;
-	left: 202px;
+	left: 136px;
 	position: absolute;
 }
 
@@ -76,16 +67,7 @@
 	width: 92px;
 	height: 22px;
 	top: 162px;
-	left: 104px;
-	position: absolute;
-}
-
-#{id}button6 {
-	z-index: 7;
-	width: 92px;
-	height: 22px;
-	top: 163px;
-	left: 6px;
+	left: 5px;
 	position: absolute;
 }
 
@@ -104,8 +86,8 @@
 #{id}label9 {
 	z-index: 6;
 	width: 75px;
-	height: 16px;
-	top: 139px;
+	height: 13px;
+	top: 140px;
 	left: 28px;
 	position: absolute;
 	min-width: 75px;
@@ -125,8 +107,8 @@
 #{id}label8 {
 	z-index: 4;
 	width: 150px;
-	height: 16px;
-	top: 41px;
+	height: 13px;
+	top: 44px;
 	left: 5px;
 	position: absolute;
 	min-width: 150px;
@@ -146,8 +128,8 @@
 #{id}label7 {
 	z-index: 2;
 	width: 150px;
-	height: 16px;
-	top: -1px;
+	height: 13px;
+	top: 2px;
 	left: 5px;
 	position: absolute;
 	font-weight: bold;
@@ -187,7 +169,7 @@
 	width: 92px;
 	height: 22px;
 	top: 163px;
-	left: 296px;
+	left: 265px;
 	position: absolute;
 }
 
@@ -196,7 +178,7 @@
 	width: 92px;
 	height: 22px;
 	top: 163px;
-	left: 199px;
+	left: 136px;
 	position: absolute;
 }
 
@@ -205,24 +187,15 @@
 	width: 92px;
 	height: 22px;
 	top: 163px;
-	left: 102px;
-	position: absolute;
-}
-
-#{id}button1 {
-	z-index: 9;
-	width: 92px;
-	height: 22px;
-	top: 20px;
-	left: 379px;
+	left: 7px;
 	position: absolute;
 }
 
 #{id}label6 {
 	z-index: 9;
 	width: 200px;
-	height: 21px;
-	top: 352px;
+	height: 20px;
+	top: 353px;
 	left: 5px;
 	position: absolute;
 	color: rgb(0, 51, 102);
@@ -233,8 +206,8 @@
 #{id}label5 {
 	z-index: 8;
 	width: 100px;
-	height: 16px;
-	top: 112px;
+	height: 13px;
+	top: 115px;
 	left: 184px;
 	position: absolute;
 	min-width: 100px;
@@ -254,8 +227,8 @@
 #{id}label4 {
 	z-index: 6;
 	width: 75px;
-	height: 16px;
-	top: 112px;
+	height: 13px;
+	top: 115px;
 	left: 5px;
 	position: absolute;
 	min-width: 75px;
@@ -275,8 +248,8 @@
 #{id}label3 {
 	z-index: 4;
 	width: 150px;
-	height: 16px;
-	top: 49px;
+	height: 13px;
+	top: 52px;
 	left: 5px;
 	position: absolute;
 	min-width: 150px;
@@ -287,7 +260,7 @@
 #{id}textField2 {
 	z-index: 4;
 	width: 497px;
-	height: 44px;
+	height: 36px;
 	top: 70px;
 	left: 5px;
 	position: absolute;
@@ -296,8 +269,8 @@
 #{id}label2 {
 	z-index: 2;
 	width: 75px;
-	height: 16px;
-	top: 7px;
+	height: 13px;
+	top: 10px;
 	left: 5px;
 	position: absolute;
 	min-width: 75px;
@@ -307,7 +280,7 @@
 
 #{id}textField1 {
 	z-index: 2;
-	width: 350px;
+	width: 496px;
 	height: 22px;
 	top: 28px;
 	left: 5px;
@@ -334,9 +307,9 @@
 
 #{id}label1 {
 	z-index: 2;
-	width: 49px;
-	height: 21px;
-	top: 4px;
+	width: 53px;
+	height: 20px;
+	top: 5px;
 	left: 5px;
 	position: absolute;
 	font-size: 18px;
@@ -375,6 +348,14 @@
 	height: 33px;
 	top: 379px;
 	left: 549px;
+	position: absolute;
+}
+
+#{id}buttonAddOutcome {
+	width: 92px;
+	height: 22px;
+	top: 148px;
+	left: 921px;
 	position: absolute;
 }
 

@@ -3,6 +3,14 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#menuBarMain .waf-menuItem-level-0 {
+	font-size: 14px;
+}
+
+#menuBarMain .waf-menuItem .waf-menuItem {
+	font-size: 9px;
+}
+
 #richText7 {
 	z-index: 1;
 	width: 110px;
@@ -19,7 +27,7 @@
 #richText5 {
 	z-index: 1;
 	width: 105px;
-	height: 22px;
+	height: 20px;
 	top: 0px;
 	left: 0px;
 	position: absolute;
@@ -157,7 +165,7 @@
 	z-index: 26;
 	width: 550px;
 	height: 30px;
-	top: 5px;
+	top: 2px;
 	left: 310px;
 	position: absolute;
 	border-top-style: none;
@@ -213,7 +221,7 @@
 #menuAddEvent {
 	z-index: 1;
 	width: 105px;
-	height: 22px;
+	height: 20px;
 	top: 0px;
 	left: 0px;
 	position: absolute;
@@ -229,7 +237,7 @@
 #menuManageUsers {
 	z-index: 2;
 	width: 105px;
-	height: 22px;
+	height: 20px;
 	top: 0px;
 	left: 0px;
 	position: absolute;

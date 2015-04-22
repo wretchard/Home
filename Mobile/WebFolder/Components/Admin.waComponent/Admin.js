@@ -12,16 +12,16 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
-		$$('componentMain_button2').disable()
-		$$('componentMain_button7').disable()
+//		$$('componentMain_button2').disable()
+//		$$('componentMain_button7').disable()
 
 	// @region namespaceDeclaration// @startlock
-	var button12 = {};	// @button
+	var buttonAddOutcome = {};	// @button
+	var buttonCreateNew = {};	// @button
 	var textField7 = {};	// @textField
 	var outcomesEvent = {};	// @dataSource
 	var button8 = {};	// @button
 	var button7 = {};	// @button
-	var button6 = {};	// @button
 	var checkbox1 = {};	// @checkbox
 	var textField6 = {};	// @textField
 	var textField5 = {};	// @textField
@@ -33,24 +33,30 @@ function constructor (id) {
 	var eventEvent = {};	// @dataSource
 	var button5 = {};	// @button
 	var button2 = {};	// @button
-	var button1 = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	button12.click = function button12_click (event)// @startlock
+	buttonAddOutcome.click = function buttonAddOutcome_click (event)// @startlock
 	{// @endlock
-	
-		if ($$('componentMain').sources.event.eventName == null 
-		|| $$('componentMain').sources.event.eventDescription== null 
-		|| $$('componentMain').sources.event.openingDate== undefined)
-		{
-			$$('componentMain_richTextMessage').setValue("You must fill in an event name, description and opening date.")
-			return;
-		}
-		$$('componentMain').sources.event.save();
-		$$('componentMain_button1').enable()
-		$$('componentMain_richTextMessage').setValue("Record saved")
+		$$('componentMain_dataGrid2').show()
+		$$('componentMain_container2').show()
+//		$$('componentMain_buttonAddOutcome').hide()
+	};// @lock
+
+	buttonCreateNew.click = function buttonCreateNew_click (event)// @startlock
+	{// @endlock
+		$$('componentMain_dataGrid2').hide()
+		$$('componentMain_container2').hide()
+		$$('componentMain_buttonAddOutcome').hide()
+		
+//		if($$('componentMain').sources.outcomes.length ==0) {
+//			$$('componentMain_dataGrid2').hide()
+//			console.log('hide')
+//		} else {
+//			$$('componentMain_dataGrid2').show()
+//			console.log('show')	
+//		}	
 	};// @lock
 
 	textField7.change = function textField7_change (event)// @startlock
@@ -58,11 +64,24 @@ function constructor (id) {
 		$$('componentMain_button2').enable()
 	};// @lock
 
+	outcomesEvent.onCollectionChange = function outcomesEvent_onCollectionChange (event)// @startlock
+	{// @endlock
+		if($$('componentMain').sources.outcomes.length == 0) {
+			$$('componentMain_dataGrid2').hide()
+			$$('componentMain_container2').hide()
+			$$('componentMain_buttonAddOutcome').show()
+		} else {
+			$$('componentMain_dataGrid2').show()
+			$$('componentMain_container2').show()
+//			$$('componentMain_buttonAddOutcome').show()	
+		}
+	};// @lock
+
 	outcomesEvent.onBeforeCurrentElementChange = function outcomesEvent_onBeforeCurrentElementChange (event)// @startlock
 	{// @endlock
 		if (this.ID == null) {
-			this.removeCurrent()	
-		}	
+			this.removeCurrent()
+		} 
 	};// @lock
 
 	button8.click = function button8_click (event)// @startlock
@@ -82,12 +101,6 @@ function constructor (id) {
 		$$('componentMain').sources.outcomes.save();
 		$$('componentMain_button6').enable()
 		$$('componentMain_richTextMessage').setValue("Record saved")
-	};// @lock
-
-	button6.click = function button6_click (event)// @startlock
-	{// @endlock
-		this.disable();
-		$$('componentMain_button7').enable()
 	};// @lock
 
 	checkbox1.change = function checkbox1_change (event)// @startlock
@@ -155,22 +168,18 @@ function constructor (id) {
 		}
 		$$('componentMain').sources.event.save();
 		$$('componentMain_button1').enable()
+		$$('componentMain_buttonAddOutcome').show()
 		$$('componentMain_richTextMessage').setValue("Record saved")
 	};// @lock
 
-	button1.click = function button1_click (event)// @startlock
-	{// @endlock
-		this.disable();
-		$$('componentMain_button2').enable()
-	};// @lock
-
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_button12", "click", button12.click, "WAF");
+	WAF.addListener(this.id + "_buttonAddOutcome", "click", buttonAddOutcome.click, "WAF");
+	WAF.addListener(this.id + "_buttonCreateNew", "click", buttonCreateNew.click, "WAF");
+	WAF.addListener(this.id + "_outcomes", "onCollectionChange", outcomesEvent.onCollectionChange, "WAF");
 	WAF.addListener(this.id + "_textField7", "change", textField7.change, "WAF");
 	WAF.addListener(this.id + "_outcomes", "onBeforeCurrentElementChange", outcomesEvent.onBeforeCurrentElementChange, "WAF");
 	WAF.addListener(this.id + "_button8", "click", button8.click, "WAF");
 	WAF.addListener(this.id + "_button7", "click", button7.click, "WAF");
-	WAF.addListener(this.id + "_button6", "click", button6.click, "WAF");
 	WAF.addListener(this.id + "_checkbox1", "change", checkbox1.change, "WAF");
 	WAF.addListener(this.id + "_textField6", "change", textField6.change, "WAF");
 	WAF.addListener(this.id + "_textField5", "change", textField5.change, "WAF");
@@ -182,7 +191,6 @@ function constructor (id) {
 	WAF.addListener(this.id + "_event", "onBeforeCurrentElementChange", eventEvent.onBeforeCurrentElementChange, "WAF");
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
-	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
