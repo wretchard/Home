@@ -66,7 +66,7 @@ addOneUser("eugene@email.com", "zaporitsian3", "Admin", "Eugene")
 //ds.User.all()
 //currentSession()
 
-//ds.User.all()
+ds.User.all()
 //ds.Outcome(1).event.eventName
 
 //ds.Outcome.all()
