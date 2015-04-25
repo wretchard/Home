@@ -14,10 +14,12 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 		
 		var eventID=data.userData.eventID;
+//		debugger;
 		$$('componentMain').sources.event.query("ID=:1", eventID, {
 		onSuccess: function(event){
 			$$('componentMain').sources.event.createResult(
 			{onSuccess: function(event) {
+//				debugger;
 				$$('componentMain').sources.result.query("batch=:1", event.result)
 				
 			}, onError: function(event){

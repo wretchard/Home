@@ -7,6 +7,7 @@ model.Event.entityMethods.createResult = function() {
 	var cU=ds.User(curUser.ID)
 //	var timeStamp=Date.now() / 1000 | 0
 	var timeStamp=Date();
+//	var timeStamp = new Date().getTime()
 	var uuid=generateUUID();
 	var outLength=this.outcomes.length
 	this.outcomes.forEach(

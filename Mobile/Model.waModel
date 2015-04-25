@@ -25,12 +25,12 @@
 				"panelColor" : "#D8D8D8",
 				"panel" : 
 				{
-					"isOpen" : "true",
+					"isOpen" : "false",
 					"pathVisible" : true,
 					"position" : 
 					{
 						"X" : 10,
-						"Y" : 26
+						"Y" : 18
 					}
 				}
 			},
@@ -53,12 +53,12 @@
 				"panelColor" : "#C4BD97",
 				"panel" : 
 				{
-					"isOpen" : "false",
+					"isOpen" : "true",
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 14,
-						"Y" : 6
+						"X" : 11,
+						"Y" : 18
 					}
 				},
 				"attributes" : 
@@ -80,6 +80,20 @@
 					{
 						"X" : 44,
 						"Y" : 20
+					}
+				}
+			},
+			"ResultExport" : 
+			{
+				"panelColor" : "#fff",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 28,
+						"Y" : 5
 					}
 				}
 			}
@@ -111,6 +125,10 @@
 				{
 					"events" : "MyResult/MyResult-events.js",
 					"computed" : "MyResult/MyResult-events.js"
+				},
+				"ResultExport" : 
+				{
+					"computed" : "ResultExport/ResultExport-events.js"
 				}
 			}
 		}
@@ -256,6 +274,11 @@
 			"events" : 
 			[
 				{
+					"kind" : "remove",
+					"from" : "$mainModel.Outcome.events.remove",
+					"userDefined" : true
+				},
+				{
 					"kind" : "validate",
 					"from" : "$mainModel.Outcome.events.validate",
 					"userDefined" : true
@@ -354,6 +377,13 @@
 					"scope" : "public",
 					"type" : "string",
 					"path" : "outcome.event.eventName"
+				},
+				{
+					"name" : "userEmail",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "user.email"
 				}
 			],
 			"methods" : 
@@ -413,6 +443,78 @@
 					"kind" : "restrict",
 					"from" : "$mainModel.MyResult.events.restrict",
 					"userDefined" : true
+				}
+			]
+		},
+		{
+			"name" : "ResultExport",
+			"className" : "ResultExport",
+			"collectionName" : "ResultExportCollection",
+			"scope" : "public",
+			"extends" : "Result",
+			"attributes" : 
+			[
+				{
+					"name" : "batch",
+					"kind" : "removed"
+				},
+				{
+					"name" : "userName",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "user.email"
+				},
+				{
+					"name" : "outcomeEventName",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "outcome.event.eventName"
+				},
+				{
+					"name" : "outcomeClosingDate",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false,
+					"path" : "outcome.event.closingDate"
+				},
+				{
+					"name" : "outcomeEvaluationDate",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false,
+					"path" : "outcome.event.evaluationDate"
+				},
+				{
+					"name" : "outcomeName",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "outcome.outComeName"
+				},
+				{
+					"name" : "readableTimeStamp",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.ResultExport.readableTimeStamp.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "outcomeOccurred",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "bool",
+					"path" : "outcome.occurred"
 				}
 			]
 		},

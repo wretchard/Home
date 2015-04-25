@@ -252,3 +252,12 @@
 	position: absolute;
 }
 
+#richTextVersion {
+	z-index: 27;
+	width: 61px;
+	height: 13px;
+	top: 56px;
+	left: 15px;
+	position: absolute;
+}
+
