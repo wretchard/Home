@@ -16,17 +16,73 @@
             return str;
  }
 
-var
+/*var
  	stream,
  	csv,
  	x,
  	tab;
+
 CsvWriter =	require('CsvWriter').CsvWriter
-stream = new TextStream("C:/Users/wretchard/Downloads/xxx.csv","write",-2);
+stream = new TextStream("C:/Users/wretchard/Downloads/CSVexport6.csv","write",-2);
 csv = new CsvWriter(stream,";","UTF-8");
-//tab = ds.Result.all().toArray()
-tab = ds.Result.all().toArray("ID, outName, outDesc, eventName, userEmail,")
-x=ConvertToCSV(tab)
-//tab = new Array("1","Amal","BAHOUS");
-csv.writeRecord(x)
-csv.Close()
+tab = new Array("1","Amal, the cat","BAHOUS");*/
+
+
+//tab=new Array("ID", "userEmail", "userName", "probability", "eventName", "eventDescription", "outName", "outDesc", "outOccurred", "readableTS")
+//t1={ID:"ID", userEmail:"userEmail", userName:"userName", probability:"probability", eventName:"eventName", eventDescription:"eventDescription", outName:"outName", outDesc:"outDesc", outOccurred:"outOccurred", readableTS:"readableTS"}	
+//t1={ID:"ID", userEmail:"userEmail", userName:"userName", probability:"probability", eventName:"eventName", eventDescription:"eventDescription", outName:"outName", outDesc:"outDesc"}
+
+//t2={ID:"ID", userEmail:"userEmail", userName:"userName", probability:"probability", eventName:"eventName", eventDescription:"eventDescription", outName:"outName", outDesc:"outDesc", outOccurred:"outOccurred", readableTS:"readableTS"}
+//x=ConvertToCSV(tab)
+//csv.writeRecord(x)
+//csv.Close()
+//t1=[{ID:0}, {userEmail:"helllo"}]
+//t2=[{ID:1}, {userEmail:"zzzz"}]
+//t1.push(t2)
+//t1
+//tab=ds.Result.query("ID=1136").toArray("ID, userEmail, userName, probability, eventName, eventDescription, outName, outDesc,outOccurred, readableTS")
+//tab2= ds.Result.query("ID=1137").toArray("ID, userEmail, userName, probability, eventName, eventDescription, outName, outDesc,outOccurred, readableTS")
+
+//tab = ds.Result.all().toArray("ID, userEmail, userName, probability, eventName, eventDescription, outName, outDesc,outOccurred, readableTS")
+//tab = ds.Result.all().toArray("ID, userEmail, userName, probability, eventName, eventDescription, outName, outDesc")
+
+//tab.splice(0, 0, t1)
+//t2.push(t1)
+//x=ConvertToCSV(tab)
+//csv.writeRecord(tab)
+//csv.writeRecord(tab)
+//csv.Close()
+/*var t;
+ds.Export.remove();
+var allResults;
+allResults=ds.Result.all();
+allResults.forEach(
+	function(res) {
+		Ex=ds.Export.createEntity()
+		Ex.ID=res.ID;
+		Ex.probability=res.probability;
+		Ex.userName=res.me;
+		Ex.userEmail=res.userEmail;
+		Ex.eventName=res.eventName;
+		Ex.eventDescription=res.eventDescription;
+		Ex.outComeName=res.outName;
+		Ex.outComeDescription=res.outDesc;
+		Ex.occurred=res.outOccurred;
+//		t=Date(res.timeS)
+		Ex.timeStamp= new Date(res.timeS);
+		Ex.save()
+	}
+)
+
+ds.Export.all();*/
+//ds.Export.length
+
+//t= new Date("4/24/2015 5:33")
+//d=Number(t)
+//allResults=ds.Result.query("timeS > 1429852918702")
+////1429852899453
+//allResults.timeS
+ds.Result.remove()
+//Date(1429852899453)
+//Date(1430389973346)
+

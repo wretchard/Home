@@ -49,9 +49,9 @@ function constructor (id) {
 			$$('componentMain_richText4').setValue("You must login first. Use 'tester@email.com' and 'password' as credentials")
 			return;
 		}
-
+		
 		var eventID=$$('componentMain').sources.event.ID;
-
+		
 		$$('componentMain').loadComponent({ 
     		path: '/Components/Forecast.waComponent', 
     		userData: { eventID: eventID}

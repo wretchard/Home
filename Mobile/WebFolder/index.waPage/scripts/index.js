@@ -69,6 +69,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			
 		}
 		else {
+			if($$('componentMain').sources.result.length!=0){
+				$$('componentMain').sources.result.removeUnused()}
 			$$('componentMain').loadComponent('/Components/myForecast.waComponent');
 		}
 		

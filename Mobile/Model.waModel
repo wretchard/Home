@@ -29,8 +29,8 @@
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 10,
-						"Y" : 18
+						"X" : 100,
+						"Y" : 13
 					}
 				}
 			},
@@ -43,8 +43,8 @@
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 62,
-						"Y" : 42
+						"X" : 33,
+						"Y" : 115
 					}
 				}
 			},
@@ -53,12 +53,12 @@
 				"panelColor" : "#C4BD97",
 				"panel" : 
 				{
-					"isOpen" : "true",
+					"isOpen" : "false",
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 11,
-						"Y" : 18
+						"X" : 66,
+						"Y" : 10
 					}
 				},
 				"attributes" : 
@@ -83,17 +83,17 @@
 					}
 				}
 			},
-			"ResultExport" : 
+			"Export" : 
 			{
-				"panelColor" : "#fff",
+				"panelColor" : "#D7E3BC",
 				"panel" : 
 				{
 					"isOpen" : "true",
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 28,
-						"Y" : 5
+						"X" : 10,
+						"Y" : 23
 					}
 				}
 			}
@@ -119,16 +119,17 @@
 				"Result" : 
 				{
 					"events" : "Result/Result-events.js",
-					"method" : "Result/Result-methods.js"
+					"method" : "Result/Result-methods.js",
+					"computed" : "Result/Result-events.js"
 				},
 				"MyResult" : 
 				{
 					"events" : "MyResult/MyResult-events.js",
 					"computed" : "MyResult/MyResult-events.js"
 				},
-				"ResultExport" : 
+				"Export" : 
 				{
-					"computed" : "ResultExport/ResultExport-events.js"
+					"method" : "Export/Export-methods.js"
 				}
 			}
 		}
@@ -216,6 +217,101 @@
 			[
 				{
 					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Export",
+			"className" : "Export",
+			"collectionName" : "ExportCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "intKey",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "probability",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "userName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "userEmail",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "eventName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "eventDescription",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "outComeName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "outComeDescription",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "occurred",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "timeStamp",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				}
+			],
+			"methods" : 
+			[
+				{
+					"name" : "exportCSV",
+					"applyTo" : "dataClass",
+					"scope" : "public",
+					"from" : "$mainModel.Export.methods.exportCSV",
+					"userDefined" : true
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "intKey"
 				}
 			]
 		},
@@ -315,11 +411,26 @@
 					"type" : "number"
 				},
 				{
+					"name" : "userEmail",
+					"kind" : "alias",
+					"matchColumn" : "`,userEmail",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "user.email"
+				},
+				{
 					"name" : "user",
 					"kind" : "relatedEntity",
 					"scope" : "public",
 					"type" : "User",
 					"path" : "User"
+				},
+				{
+					"name" : "userName",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "user.fullName"
 				},
 				{
 					"name" : "outcome",
@@ -341,6 +452,12 @@
 					"scope" : "public",
 					"type" : "string",
 					"path" : "outcome.outComeDescription"
+				},
+				{
+					"name" : "readableTS",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
 					"name" : "me",
@@ -379,11 +496,18 @@
 					"path" : "outcome.event.eventName"
 				},
 				{
-					"name" : "userEmail",
+					"name" : "eventDescription",
 					"kind" : "alias",
 					"scope" : "public",
 					"type" : "string",
-					"path" : "user.email"
+					"path" : "outcome.event.eventDescription"
+				},
+				{
+					"name" : "outOccurred",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "bool",
+					"path" : "outcome.occurred"
 				}
 			],
 			"methods" : 
@@ -423,6 +547,13 @@
 					"kind" : "removed"
 				},
 				{
+					"name" : "userEmail",
+					"kind" : "alias",
+					"scope" : "public",
+					"type" : "string",
+					"path" : "user.email"
+				},
+				{
 					"name" : "displayDate",
 					"kind" : "calculated",
 					"scope" : "public",
@@ -443,78 +574,6 @@
 					"kind" : "restrict",
 					"from" : "$mainModel.MyResult.events.restrict",
 					"userDefined" : true
-				}
-			]
-		},
-		{
-			"name" : "ResultExport",
-			"className" : "ResultExport",
-			"collectionName" : "ResultExportCollection",
-			"scope" : "public",
-			"extends" : "Result",
-			"attributes" : 
-			[
-				{
-					"name" : "batch",
-					"kind" : "removed"
-				},
-				{
-					"name" : "userName",
-					"kind" : "alias",
-					"scope" : "public",
-					"type" : "string",
-					"path" : "user.email"
-				},
-				{
-					"name" : "outcomeEventName",
-					"kind" : "alias",
-					"scope" : "public",
-					"type" : "string",
-					"path" : "outcome.event.eventName"
-				},
-				{
-					"name" : "outcomeClosingDate",
-					"kind" : "alias",
-					"scope" : "public",
-					"type" : "date",
-					"simpleDate" : false,
-					"path" : "outcome.event.closingDate"
-				},
-				{
-					"name" : "outcomeEvaluationDate",
-					"kind" : "alias",
-					"scope" : "public",
-					"type" : "date",
-					"simpleDate" : false,
-					"path" : "outcome.event.evaluationDate"
-				},
-				{
-					"name" : "outcomeName",
-					"kind" : "alias",
-					"scope" : "public",
-					"type" : "string",
-					"path" : "outcome.outComeName"
-				},
-				{
-					"name" : "readableTimeStamp",
-					"kind" : "calculated",
-					"scope" : "public",
-					"type" : "string",
-					"scriptKind" : "javascript",
-					"onGet" : 
-					[
-						{
-							"from" : "$mainModel.ResultExport.readableTimeStamp.onGet",
-							"userDefined" : true
-						}
-					]
-				},
-				{
-					"name" : "outcomeOccurred",
-					"kind" : "alias",
-					"scope" : "public",
-					"type" : "bool",
-					"path" : "outcome.occurred"
 				}
 			]
 		},

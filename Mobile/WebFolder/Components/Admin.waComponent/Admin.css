@@ -3,6 +3,15 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}label13 {
+	z-index: 17;
+	width: 52px;
+	height: 16px;
+	top: 7px;
+	left: 1084px;
+	position: absolute;
+}
+
 #{id}textField7 {
 	z-index: 14;
 	width: 130px;
@@ -15,8 +24,8 @@
 #{id}label12 {
 	z-index: 13;
 	width: 100px;
-	height: 13px;
-	top: 115px;
+	height: 16px;
+	top: 112px;
 	left: 345px;
 	position: absolute;
 	min-width: 100px;
@@ -25,14 +34,15 @@
 }
 
 #{id}label11 {
-	z-index: 12;
-	width: 140px;
-	height: 20px;
-	top: 5px;
+	z-index: 6;
+	width: 200px;
+	height: 21px;
+	top: 4px;
 	left: 697px;
 	position: absolute;
 	font-size: 18px;
 	color: rgb(0, 51, 102);
+	min-width: 200px;
 }
 
 #{id}button10 {
@@ -72,10 +82,10 @@
 }
 
 #{id}label10 {
-	z-index: 11;
+	z-index: 9;
 	width: 250px;
-	height: 20px;
-	top: 353px;
+	height: 21px;
+	top: 352px;
 	left: 697px;
 	position: absolute;
 	font-size: 18px;
@@ -86,8 +96,8 @@
 #{id}label9 {
 	z-index: 6;
 	width: 75px;
-	height: 13px;
-	top: 140px;
+	height: 16px;
+	top: 139px;
 	left: 28px;
 	position: absolute;
 	min-width: 75px;
@@ -107,8 +117,8 @@
 #{id}label8 {
 	z-index: 4;
 	width: 150px;
-	height: 13px;
-	top: 44px;
+	height: 16px;
+	top: 41px;
 	left: 5px;
 	position: absolute;
 	min-width: 150px;
@@ -128,8 +138,8 @@
 #{id}label7 {
 	z-index: 2;
 	width: 150px;
-	height: 13px;
-	top: 2px;
+	height: 16px;
+	top: -1px;
 	left: 5px;
 	position: absolute;
 	font-weight: bold;
@@ -147,7 +157,7 @@
 }
 
 #{id}container2 {
-	z-index: 10;
+	z-index: 9;
 	width: 508px;
 	height: 203px;
 	top: 378px;
@@ -192,10 +202,10 @@
 }
 
 #{id}label6 {
-	z-index: 9;
+	z-index: 7;
 	width: 200px;
-	height: 20px;
-	top: 353px;
+	height: 21px;
+	top: 352px;
 	left: 5px;
 	position: absolute;
 	color: rgb(0, 51, 102);
@@ -206,8 +216,8 @@
 #{id}label5 {
 	z-index: 8;
 	width: 100px;
-	height: 13px;
-	top: 115px;
+	height: 16px;
+	top: 112px;
 	left: 184px;
 	position: absolute;
 	min-width: 100px;
@@ -227,8 +237,8 @@
 #{id}label4 {
 	z-index: 6;
 	width: 75px;
-	height: 13px;
-	top: 115px;
+	height: 16px;
+	top: 112px;
 	left: 5px;
 	position: absolute;
 	min-width: 75px;
@@ -248,8 +258,8 @@
 #{id}label3 {
 	z-index: 4;
 	width: 150px;
-	height: 13px;
-	top: 52px;
+	height: 16px;
+	top: 49px;
 	left: 5px;
 	position: absolute;
 	min-width: 150px;
@@ -269,8 +279,8 @@
 #{id}label2 {
 	z-index: 2;
 	width: 75px;
-	height: 13px;
-	top: 10px;
+	height: 16px;
+	top: 7px;
 	left: 5px;
 	position: absolute;
 	min-width: 75px;
@@ -288,7 +298,7 @@
 }
 
 #{id}container1 {
-	z-index: 8;
+	z-index: 7;
 	width: 529px;
 	height: 201px;
 	top: 378px;
@@ -297,7 +307,7 @@
 }
 
 #{id}dataGrid2 {
-	z-index: 7;
+	z-index: 6;
 	width: 600px;
 	height: 320px;
 	top: 30px;
@@ -307,13 +317,14 @@
 
 #{id}label1 {
 	z-index: 2;
-	width: 53px;
-	height: 20px;
-	top: 5px;
+	width: 150px;
+	height: 21px;
+	top: 4px;
 	left: 5px;
 	position: absolute;
 	font-size: 18px;
 	color: rgb(0, 51, 102);
+	min-width: 150px;
 }
 
 #{id} {
@@ -332,7 +343,7 @@
 }
 
 #{id}richTextMessage {
-	z-index: 13;
+	z-index: 12;
 	width: 18px;
 	height: 13px;
 	top: 354px;
@@ -343,7 +354,7 @@
 }
 
 #{id}buttonCreateNew {
-	z-index: 14;
+	z-index: 13;
 	width: 119px;
 	height: 33px;
 	top: 379px;
@@ -357,5 +368,33 @@
 	top: 354px;
 	left: 921px;
 	position: absolute;
+}
+
+#{id}buttonExport {
+	z-index: 16;
+	width: 136px;
+	height: 22px;
+	top: 4px;
+	left: 937px;
+	position: absolute;
+}
+
+#{id}textDate {
+	z-index: 17;
+	width: 126px;
+	height: 22px;
+	top: 4px;
+	left: 1141px;
+	position: absolute;
+}
+
+#{id}richTextExport {
+	z-index: 18;
+	width: 75px;
+	height: 16px;
+	top: 5px;
+	left: 81px;
+	position: absolute;
+	background-color: transparent;
 }
 

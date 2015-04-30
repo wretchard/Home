@@ -62,12 +62,27 @@ function testEmail(em) {
 //ds.User.all()
 //ds.Outcome.all().remove()
 //ds.Result.length
-
-countAllTables()
+//ds.Result.remove()
+//ds.Result.length	
+//ds.Result(1342).readableTS
+//countAllTables()
 //x=ds.ResultExport.all()
 //x
 //var t =  new Date().getTime();
 //var t= 1429848287260
 //x= Date(t)
 //t
+//v=1430398816448
+//v.toLocaleString()
 //ds.Event.all()
+//t= new Date("Thu Apr 30 2015 22:59:59 GMT+1000")
+//d = Number(t)
+//z= new Date("2015-04-30T13:54:32.200Z")
+//Number(z)
+
+//z= new Date(1430402072200)
+//z.toLocaleString()
+
+
+
+

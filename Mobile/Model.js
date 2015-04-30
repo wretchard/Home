@@ -10,3 +10,4 @@ include("./Model/Outcome/Outcome-events.js");
 include("./Model/Event/Event-events.js");
 include("./Model/MyResult/MyResult-events.js");
 include("./Model/ResultExport/ResultExport-events.js");
+include("./Model/Export/Export-methods.js");

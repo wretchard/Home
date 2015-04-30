@@ -14,13 +14,14 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 		
 		var eventID=data.userData.eventID;
+
 //		debugger;
 		$$('componentMain').sources.event.query("ID=:1", eventID, {
 		onSuccess: function(event){
 			$$('componentMain').sources.event.createResult(
 			{onSuccess: function(event) {
-//				debugger;
 				$$('componentMain').sources.result.query("batch=:1", event.result)
+				
 				
 			}, onError: function(event){
 				console.log(event)
@@ -114,7 +115,14 @@ function constructor (id) {
 
 	resultEvent.onCollectionChange = function resultEvent_onCollectionChange (event)// @startlock
 	{// @endlock
-
+//		alert($$('componentMain').sources.resultArray.length)
+		var n=$$('componentMain').sources.resultArray.length;
+		if (n>0) {
+			for (var i=0; i<n; i++) {
+				sources.componentMain_resultArray.removeCurrent()
+			}
+		}
+		
 		$$('componentMain').sources.result.toArray("ID, outName, outDesc, probability", 
 			{onSuccess:function(event)
 						{

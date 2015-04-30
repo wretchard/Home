@@ -16,6 +16,7 @@ function constructor (id) {
 //		$$('componentMain_button7').disable()
 
 	// @region namespaceDeclaration// @startlock
+	var buttonExport = {};	// @button
 	var buttonAddOutcome = {};	// @button
 	var buttonCreateNew = {};	// @button
 	var textField7 = {};	// @textField
@@ -36,6 +37,19 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	buttonExport.click = function buttonExport_click (event)// @startlock
+	{// @endlock
+		var d= $$('componentMain_textDate').getValue()
+		$$('componentMain').sources.export.exportCSV(d, 
+		{onSuccess:function(event){	
+			$$('componentMain_richTextExport').setValue('Download the Export table in the Export menu')
+		}, onError:function(error) {
+			$$('componentMain_richTextExport').setValue('There is an error in the Export')
+		}
+		}
+		)
+	};// @lock
 
 	buttonAddOutcome.click = function buttonAddOutcome_click (event)// @startlock
 	{// @endlock
@@ -173,6 +187,7 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_buttonExport", "click", buttonExport.click, "WAF");
 	WAF.addListener(this.id + "_buttonAddOutcome", "click", buttonAddOutcome.click, "WAF");
 	WAF.addListener(this.id + "_buttonCreateNew", "click", buttonCreateNew.click, "WAF");
 	WAF.addListener(this.id + "_outcomes", "onCollectionChange", outcomesEvent.onCollectionChange, "WAF");
