@@ -62,13 +62,13 @@ function testEmail(em) {
 //ds.User.all()
 //ds.Outcome.all().remove()
 //ds.Result.length
-//ds.Result.remove()
+ds.Result.remove()
 //ds.Result.length	
 //ds.Result(1342).readableTS
 //countAllTables()
 //x=ds.ResultExport.all()
 //x
-ds.Event.all()
+//ds.Event(34)
 
 
 

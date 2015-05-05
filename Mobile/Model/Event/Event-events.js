@@ -1,5 +1,4 @@
 function setAus(d) {
-	//d=  new Date()
 	localTime= d.getTime()
 	localOffSet=d.getTimezoneOffset()*60000
 	utc=localTime + localOffSet

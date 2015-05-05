@@ -97,6 +97,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	menuHome.click = function menuHome_click (event)// @startlock
 	{// @endlock
+	
 		try {
 		var length=$$('componentMain').sources.resultArray.length;
 
@@ -104,10 +105,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			$$('componentMain').sources.resultArray.getCurrentElement()
 			$$('componentMain').sources.resultArray.removeCurrent()
 		}
-		   if($$('componentMain').sources.result.length!=0){
+		if($$('componentMain').sources.result.length!=0){
 				$$('componentMain').sources.result.removeUnused()
-			} else {return "nothing"}
-			$$('componentMain').loadComponent('/Components/Home.waComponent');
+		} else {return "nothing"}
+		$$('componentMain').loadComponent('/Components/Home.waComponent');
 		}
 		catch(err) {			
 		$$('componentMain').loadComponent('/Components/Home.waComponent');

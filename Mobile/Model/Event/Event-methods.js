@@ -27,8 +27,9 @@ model.Event.entityMethods.createResult = function() {
 			newResult.user=cU;
 //			newResult.readableTS=timeStamp.toLocaleString();
 //			newResult.timeS=Number(timeStamp);
-			newResult.readableTS=tst.ausTime;
-			newResult.timeS=tst.aeTime;			
+//			newResult.readableTS=tst.ausTime;
+//			newResult.timeS=tst.aeTime;	
+			newResult.timeS=0;		
 			newResult.outcome=outcome;
 			newResult.batch=uuid;
 			newResult.save();
