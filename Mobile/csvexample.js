@@ -82,7 +82,27 @@ ds.Export.all();*/
 //allResults=ds.Result.query("timeS > 1429852918702")
 ////1429852899453
 //allResults.timeS
-ds.Result.remove()
+//ds.Result.remove()
 //Date(1429852899453)
 //Date(1430389973346)
+d=  new Date() // the absolute date in Zulu
+//d.toISOString().substring(0, 16)
+localTime= d.getTime()
+
+d.getTimezoneOffset()
+localOffSet=d.getTimezoneOffset()* 60000
+utc=localTime + localOffSet
+aeTime= utc + (10 * 3600000)
+ausTime = new Date(aeTime).toISOString().substring(0, 16)
+//utcTime= Date(utc)
+/*a={}
+a.localTime=Date(localTime)
+a.utc=Date(utc)
+a*/
+
+//a=Date.parse(sydDate)
+//gmt = d.toISOString().substring(0, 16)
+//sd=(d+offSet)
+//locT= new Date(sd)
+//locT.substring(0, 16)
 

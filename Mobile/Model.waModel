@@ -25,12 +25,12 @@
 				"panelColor" : "#D8D8D8",
 				"panel" : 
 				{
-					"isOpen" : "false",
+					"isOpen" : "true",
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 100,
-						"Y" : 13
+						"X" : 35,
+						"Y" : 23
 					}
 				}
 			},
@@ -88,7 +88,7 @@
 				"panelColor" : "#D7E3BC",
 				"panel" : 
 				{
-					"isOpen" : "true",
+					"isOpen" : "false",
 					"pathVisible" : true,
 					"position" : 
 					{
@@ -178,21 +178,45 @@
 					"kind" : "storage",
 					"scope" : "public",
 					"type" : "date",
-					"simpleDate" : false
+					"simpleDate" : false,
+					"events" : 
+					[
+						{
+							"kind" : "set",
+							"from" : "$mainModel.Event.closingDate.events.set",
+							"userDefined" : true
+						}
+					]
 				},
 				{
 					"name" : "openingDate",
 					"kind" : "storage",
 					"scope" : "public",
 					"type" : "date",
-					"simpleDate" : false
+					"simpleDate" : false,
+					"events" : 
+					[
+						{
+							"kind" : "set",
+							"from" : "$mainModel.Event.openingDate.events.set",
+							"userDefined" : true
+						}
+					]
 				},
 				{
 					"name" : "evaluationDate",
 					"kind" : "storage",
 					"scope" : "public",
 					"type" : "date",
-					"simpleDate" : false
+					"simpleDate" : false,
+					"events" : 
+					[
+						{
+							"kind" : "set",
+							"from" : "$mainModel.Event.evaluationDate.events.set",
+							"userDefined" : true
+						}
+					]
 				}
 			],
 			"events" : 

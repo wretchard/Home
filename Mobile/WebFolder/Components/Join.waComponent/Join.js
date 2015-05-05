@@ -11,6 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		$$('componentMain').sources.objJoin.email== null;
 
 	// @region namespaceDeclaration// @startlock
 	var textUserName = {};	// @textField
@@ -101,7 +102,7 @@ function constructor (id) {
 			passwordRegexStr = /^(?=.*\d)[a-zA-Z\d]{7,}$/;
 			isValid = passwordRegexStr.test(passWord);
 			if (!isValid) {
-				$$('componentMain_richTextError').setValue("Password must be at least 7 characters.")
+				$$('componentMain_richTextError').setValue("Password must be at least 7 characters or has improper characters.")
 				} else {
 					
 				$$('componentMain_richTextError').setValue("")	

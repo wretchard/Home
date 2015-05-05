@@ -24,10 +24,6 @@
 			"type": "widget"
 		},
 		{
-			"id": "Widget/slider",
-			"type": "widget"
-		},
-		{
 			"id": "Components/myForecast.waComponent/myForecast.html",
 			"path": "WEBFOLDER",
 			"type": "html"
